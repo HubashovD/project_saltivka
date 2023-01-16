@@ -5,10 +5,6 @@
     },
     "enabled": false,
     "layers": {
-      "N50E036_b9e6bb3d_af1f_4893_830c_96527ba753da": {
-        "enabled": true,
-        "groups": []
-      },
       "____________________be07b74b_e0f8_49eb_9824_ea901036c896": {
         "enabled": true,
         "groups": []
@@ -28,6 +24,10 @@
       "id_2_3663417e_6212_4284_96ef_9f4ec757914f": {
         "enabled": true,
         "groups": []
+      },
+      "plugin:gsielevtile": {
+        "enabled": true,
+        "groups": []
       }
     },
     "repeat": false,
@@ -41,7 +41,7 @@
       "properties": {
         "checkBox_Clickable": true,
         "checkBox_Clip": true,
-        "checkBox_ExportAttrs": false,
+        "checkBox_ExportAttrs": true,
         "checkBox_Label": false,
         "checkBox_Outline": true,
         "checkBox_Underline": false,
@@ -129,7 +129,7 @@
       "properties": {
         "checkBox_Clickable": true,
         "checkBox_Clip": true,
-        "checkBox_ExportAttrs": false,
+        "checkBox_ExportAttrs": true,
         "checkBox_Label": false,
         "checkBox_Outline": true,
         "checkBox_Underline": false,
@@ -217,7 +217,7 @@
       "properties": {
         "checkBox_Clickable": true,
         "checkBox_Clip": true,
-        "checkBox_ExportAttrs": false,
+        "checkBox_ExportAttrs": true,
         "checkBox_Label": false,
         "checkBox_Outline": true,
         "checkBox_Underline": false,
@@ -274,7 +274,7 @@
         "geomWidget0": {
           "comboData": null,
           "comboText": "Expression",
-          "editText": " attribute('building:levels') * 3",
+          "editText": "50",
           "type": 1
         },
         "geomWidget1": {},
@@ -296,7 +296,7 @@
         "radioButton_IntersectingFeatures": true,
         "slider_FontSize": 3
       },
-      "visible": false
+      "visible": true
     },
     {
       "geomType": 3,
@@ -362,7 +362,7 @@
         "geomWidget0": {
           "comboData": null,
           "comboText": "Expression",
-          "editText": " attribute('building:levels') * 3",
+          "editText": "6",
           "type": 1
         },
         "geomWidget1": {},
@@ -388,14 +388,14 @@
     },
     {
       "geomType": 0,
-      "layerId": "N50E036_b9e6bb3d_af1f_4893_830c_96527ba753da",
-      "name": "N50E036.hgt",
+      "layerId": "plugin:gsielevtile",
+      "name": "GSI Elevation Tile",
       "properties": {
         "checkBox_Clickable": true,
         "checkBox_Clip": false,
         "checkBox_Frame": false,
         "checkBox_Sides": false,
-        "checkBox_Tiles": true,
+        "checkBox_Tiles": false,
         "checkBox_Visible": true,
         "checkBox_Wireframe": false,
         "colorButton_Edge": [
@@ -416,26 +416,20 @@
           0,
           255
         ],
-        "comboBox_ClipLayer": "____________bf952481_cdc7_4d55_88a5_d9fd2236cd1b",
-        "horizontalSlider_DEMSize": 1,
+        "comboBox_ClipLayer": "id_2_3663417e_6212_4284_96ef_9f4ec757914f",
+        "horizontalSlider_DEMSize": 2,
         "lineEdit_Bottom": "0",
         "lineEdit_Name": "",
         "materials": [
           {
-            "id": "ab65c5b1",
+            "id": "5e8df771",
             "name": "map (canvas)",
-            "properties": {
-              "checkBox_Shading": true,
-              "checkBox_TransparentBackground": true,
-              "comboBox_TextureSize": "1024",
-              "radioButton_PNG": true,
-              "spinBox_Opacity": 100
-            },
+            "properties": {},
             "type": 0
           }
         ],
-        "mtlId": "ab65c5b1",
-        "spinBox_Roughening": 2,
+        "mtlId": "5e8df771",
+        "spinBox_Roughening": 1,
         "spinBox_Size": 3
       },
       "visible": false
@@ -524,14 +518,14 @@
       255
     ],
     "comboBox_MaterialType": 0,
-    "comboBox_xyShift": false,
+    "comboBox_xyShift": true,
     "groupBox_Fog": true,
     "lineEdit_CenterX": "4048111.106183193",
     "lineEdit_CenterY": "6452392.020452758",
     "lineEdit_Height": "7731.683980138041",
     "lineEdit_Rotation": "0",
     "lineEdit_Width": "7731.683980138041",
-    "lineEdit_zFactor": "1.0",
+    "lineEdit_zFactor": "0",
     "slider_Fog": 41
   },
   "Template": "3DViewer.html",
