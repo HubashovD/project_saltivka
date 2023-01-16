@@ -1,3 +1,15 @@
-#map {
-    height: 500px;
+@media( max-width: 1650px) {
+    #main_table {
+        display: block;
+    }
+}
+
+#main_table {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    width: 100vw;
+}
+
+#container {
+    width: 70vw;
 }
