@@ -7,9 +7,22 @@
 #main_table {
     display: grid;
     grid-template-columns: 7fr 3fr;
+    grid-template-rows: auto;
     width: 100vw;
 }
 
 #container {
     width: 70vw;
+    height: 90vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#infoboard {
+    margin-right: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
 }
