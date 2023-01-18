@@ -1,7 +1,131 @@
+@font-face {
+    font-family: "CHARTERC";
+    src: url("../fonts/CHARTERC.OTF") format("opentype")
+}
+
+@font-face {
+    font-family: "CHARTERC-bold";
+    src: url("../fonts/CHARTERC-BOLD.OTF") format("opentype")
+}
+
+@font-face {
+    font-family: "proxima-medium";
+    src: url("../fonts/PROXIMA-NOVA-A-MEDIUM.OTF") format("opentype")
+}
+
+@font-face {
+    font-family: "proxima-bold";
+    src: url("../fonts/PROXIMA-NOVA-A-BOLD.OTF") format("opentype")
+}
+
+@font-face {
+    font-family: "proxima-semi";
+    src: url("../fonts/PROXIMA-NOVA-A-SEMIBOLD.OTF") format("opentype")
+}
+
 @media( max-width: 1650px) {
     #main_table {
         display: block;
     }
+}
+
+article {
+    margin-top: 5vh;
+}
+
+#main-logo {
+    position: absolute;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    width: 15vw;
+}
+
+#socio-icons {
+    margin-left: 3vw;
+    margin-top: 7vh;
+}
+
+#tw {
+    font-family: 'Roboto Mono', monospace;
+    width: 3vw;
+    margin-left: 0.5vw;
+}
+
+#fb {
+    font-family: 'Roboto Mono', monospace;
+    width: 3vw;
+}
+
+.icon-wrapper {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.header-wrapper {
+    font-family: 'Roboto Mono', monospace;
+    width: 90%;
+    margin: 10px auto 50px auto;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+}
+
+#main-header {
+    height: 100vh;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    display: flex;
+    /* background-image: url('https://texty.github.io/project_russian_war_structure/pic/cover.png'); */
+    /* background-size: cover; */
+    overflow-x: hidden;
+}
+
+#socio-icons {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    position: absolute;
+}
+
+.title-wrapper {
+    max-width: 80%;
+    margin: auto !important;
+}
+
+h1.title {
+    color: white;
+    font-size: calc(30px + 1.5vw);
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em !important;
+}
+
+.title-wrapper h3 {
+    color: white;
+    text-transform: none;
+    text-align: center;
+    font-size: calc(18px + 0.7vw);
+}
+
+#autors {
+    margin-left: 3vw;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 #main {
@@ -9,7 +133,25 @@
     overflow-x: hidden;
 }
 
-#main_table {
+.usual-text-block p {
+    display: block;
+    height: fit-content;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    font: 24px "proxima-medium";
+    color: #555;
+}
+
+.semi-header {
+    color: #000;
+    font: 28px "proxima-bold";
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 3vh;
+    margin-top: 5vh;
+}
+
+#main-table {
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-template-rows: auto;

@@ -16,21 +16,98 @@
     <!-- , "TrackballControls" : "https://unpkg.com/three@0.138.0/addons/controls/TrackballControls.js"  -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/mappa-mundi/dist/mappa.min.js" type="text/javascript"></script> -->
 
 </head>
 
 <body>
-    <div id='main'>
-        <div id='main_table'>
-            <div id='father_container'>
-                <div id='container'></div>
-            </div>
-            <div id='infoboard'>
 
-            </div>
+    <div class="header-wrapper">
+        <a href="https://texty.org.ua/"><img src="pic/white_logo.svg" id="main-logo"></a>
+
+
+        <div id="socio-icons">
+            <!--fb-->
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2022/orcs-army-structure/" target="_blank" class="share-btn">
+                <div class="icon-wrapper">
+                    <img id="fb" src="pic/facebook.png">
+                </div>
+            </a>
+
+            <!--tw -->
+            <a href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2022/orcs-army-structure/" target="_blank" class="share-btn">
+                <div class="icon-wrapper">
+                    <img id="tw" src="pic/twitter.png">
+                </div>
+            </a>
+
         </div>
     </div>
+    <div id="main-header">
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="https://hubashovd.github.io/project_saltivka/web/video/26.mp4" type="video/mp4"></video>
+        <div class='title-wrapper'>
+            <h1 class='title'> Розстріляна, але жива Салтівка. </h1>
+            <h3>Як зимує знищений густонаселений житловий масив у Харкові
+            </h3>
+        </div>
+    </div>
+    <!--Путін Хуйло-->
+    <article>
+        <div id='autors'>
+            Автор: <a href="https://texty.org.ua/author/denys-hubashov/" target="_blank" class="red-d">Денис Губашов</a>
+            <br>Дизайн: <a href="https://texty.org.ua/author/nadja-kelm/" target="_blank" class="red-d">Надя Кельм</a>
+        </div>
+        <div id='main'>
+            <div class='usual-text-block'>
+                <p>Ще її називають Мертвий район, або мертве місто — через страшний масштаб руйнувань – 70% будівель пошкоджено або знищено. Сотні багатоповерхівок стоять розбиті та чорні. Але насправді Салтівка жива. Люди залишаються жити там, де, здається,
+                    не можна вижити. Приходять навідувати свої понівечені домівки, ніби хворих родичів. Вивозять якесь майно – в надії колись повернутися.
+                </p>
+                <p>У кожній квартирі тут є своя історія: про почуті, побачені і відчуті вибухи, прострах, поранення, втрату близьких, евакуацію, усвідомлення, як твій дім зникає на очах разом з усім попереднім життям.
+                </p>
+            </div>
+            <div class='semi-header'>
+                <p>“Від моєї квартири лишився тільки вхід” (Метробудівників, 9)
+                </p>
+            </div>
+            <div class='usual-text-block'>
+                <p>Віталій відкриває двері своєї оселі, а за ними – порожнеча. Квартиру розбило прямим влучанням 29 квітня, у день народження його дружини. Через дев'ять місяців чоловік вже здатний жартувати про це.
+                </p>
+                <p>«Від моєї квартири тільки вхід лишився. Рекомендую: двері харківського виробництва. Встояли… Прилетіло між нами та сусідом. Діра. Лягла дитяча кімната. Все лягло».
+                </p>
+                <p>Тепер підйом на його восьмий поверх — це щоразу ризик. Вище п’ятого є місця, де є «гуляючі» перекриття. На сходах темно, стіни чорні від гару.Віталій вмикає ліхтарик і запрошує «в гості», просить не притулятися до стін, аби не випасти
+                    з коридору вниз.
+                </p>
+            </div>
+            <div id='main-table'>
+                <div id='father_container'>
+                    <div id='container'></div>
+                </div>
+                <div id='infoboard'>
+
+                </div>
+            </div>
+            <div class='semi-header'>
+                <p>“Якщо я тут не одужаю, то ніде не вилікуюсь” (Наталії Ужвій, 72)
+                </p>
+            </div>
+            <div class='usual-text-block'>
+                <p>Ольга зовсім не збиралася виїжджати із Салтівки. Вирішила для себе: залишиться, що б не сталося та що б не лишилося від будинку. Щойно росіяни почали бомбити місто з літаків, жила перебіжками між підвалом і квартирою. Ольга пригадує: як
+                    і всім, було дуже страшно. Вона залишила домівку лише через поранення. Її контузило та посікло осколками 14 березня, коли поруч розірвався касетний боєприпас.
+                </p>
+                <p>«Я несла до підвалу людям помідори, і мене накрило, не спершу зрозуміла, що сталося. Тут ще три жінки переді мною було, їх убило. А я встала. Люди забрали мене у підвал, з 14 до 22 березня я була там. Потім мене люди забрали у село Жихар
+                    поблизу Харкова, там виходили, дякую. У квітні-травні сильно хворіла. А потім вичухалася, думаю, що робити? Треба повертатися, дуже тягнуло додому».
+                </p>
+            </div>
+        </div>
+    </article>
     <!-- <script src="js/three.js"></script> -->
     <!-- <script src="./js/scene_2.js"></script> -->
     <script type='module' src="./js/scene_2.js"></script>
