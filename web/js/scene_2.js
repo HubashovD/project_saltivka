@@ -55,6 +55,9 @@ window.onload = function() {
     renderer.setSize(container.getBoundingClientRect().width, container.getBoundingClientRect().height);
     // console.log(container.getBoundingClientRect())
     renderer.outputEncoding = THREE.sRGBEncoding;
+
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
     canvas.appendChild(renderer.domElement);
 
     var scene = new THREE.Scene()
@@ -62,24 +65,85 @@ window.onload = function() {
     const camera = new THREE.PerspectiveCamera(45, container.getBoundingClientRect().width / container.getBoundingClientRect().height, 1, 200);
     camera.position.set(10, 22, -45);
 
-    var light = new THREE.AmbientLight(0xffffff, 2)
-    scene.add(light)
+    var Ambientlight = new THREE.AmbientLight(0xffffff, 0.1)
+    scene.add(Ambientlight)
 
-    // const directionalLight = new THREE.DirectionalLight( 0xffffff, 2 );
-    // scene.add( directionalLight );
-    
+    // const directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
+    // directionalLight.position.set = (10, 22, -45)
+    // directionalLight.castShadow = true
+    // scene.add(directionalLight);
+
+    // directionalLight.shadow.mapSize.width = 512; // default
+    // directionalLight.shadow.mapSize.height = 512; // default
+    // directionalLight.shadow.camera.near = 0.5; // default
+    // directionalLight.shadow.camera.far = 500; // default
+
+    // const sphereGeometry = new THREE.SphereGeometry(5, 15, 32);
+    // const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000 });
+    // const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+    // sphere.castShadow = true; //default is false
+    // sphere.receiveShadow = false; //default
+    // scene.add(sphere);
+
+    const light = new THREE.PointLight(0xffffff, 1);
+    light.position.set(0, 50, -40);
+    light.castShadow = true
+    scene.add(light);
+
+    light.shadow.mapSize.width = 512; // default
+    light.shadow.mapSize.height = 512; // default
+    // light.power = 10
+    light.shadow.camera.near = 20; // default
+    light.shadow.camera.far = 70; // default
+
+    // const sphereSize = 1;
+    // const pointLightHelper = new THREE.PointLightHelper(light, sphereSize);
+    // scene.add(pointLightHelper);
+
+    // directionalLight.castShadow = true
+    // directionalLight.position = (0, 1, 0)
+
+    // directionalLight.target = (0, 1, 0.5)
+
+    // scene.add(directionalLight.target);
+
+    // const light = new THREE.SpotLight(0xffffff);
+    // light.position.set(30, 20, -21);
+    // light.castShadow = true; // default false
+    // scene.add(light);
+
+    // //Set up shadow properties for the light
+    // light.shadow.mapSize.width = 512; // default
+    // light.shadow.mapSize.height = 512; // default
+    // light.shadow.camera.near = 0.5; // default
+    // light.shadow.camera.far = 500; // default
+    // light.shadow.focus = 1; // default
+
+    // const spotLightHelper = new THREE.SpotLightHelper(light);
+    // scene.add(spotLightHelper);
+
+    // light.target = (0, 0, 0)
+    // scene.add(light.target)
+    // light.target = scene.children[1].children[42]
+
 
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.target.set(0, 0.5, 0);
     controls.update();
     controls.enablePan = true;
     controls.enableDamping = true;
+    // обмежуємо зум камери на мінімальний та максимальний
+    controls.minDistance = 30
+    controls.maxDistance = 60
+
+    controls.minPolarAngle = 0.7
+    controls.maxPolarAngle = 1.3
 
     // console.log(container.getBoundingClientRect())
     const loader = new GLTFLoader();
     loader.load(
         // resource URL
-        "data/threejs15.gltf",
+        "data/threejs20.gltf",
         // called when the resource is loaded
         function(gltf) {
 
@@ -100,7 +164,12 @@ window.onload = function() {
             // animate();
 
             console.log(scene)
+            scene.children[2].children[42].castShadow = true
+            scene.children[2].children[42].receiveShadow = true
 
+            for (let step = 0; step < 41; step++) {
+                scene.children[2].children[step].receiveShadow = true
+            }
 
 
         },
@@ -154,14 +223,14 @@ window.onload = function() {
                 this.pickedObject = undefined;
             }
             console.log('pick')
-            // cast a ray through the frustum
+                // cast a ray through the frustum
             this.raycaster.setFromCamera(normalizedPosition, camera);
             // get the list of objects the ray intersected
 
             try {
                 var for_intersected = []
                 for (let step = 0; step < 41; step++) {
-                    for_intersected.push(scene.children[1].children[step])
+                    for_intersected.push(scene.children[2].children[step])
                 }
                 const intersectedObjects = this.raycaster.intersectObjects(for_intersected);
                 if (intersectedObjects.length) {
@@ -173,7 +242,8 @@ window.onload = function() {
                     this.pickedObjectSavedColor = this.pickedObject.material.emissive.getHex();
                     // set its emissive color to flashing red/yellow
                     // this.pickedObject.material.emissive.setHex((time * 50) % 2 > 1 ? 0xFFFF00 : 0xFF0000);
-                    this.pickedObject.material.emissive.setHex(0xFFFF00);}
+                    this.pickedObject.material.emissive.setHex(0xb16976);
+                }
             } catch {}
 
         }
@@ -192,11 +262,12 @@ window.onload = function() {
             camera.aspect = canvas.clientWidth / canvas.clientHeight;
             camera.updateProjectionMatrix();
         }
-
+        // console.log(controls.getPolarAngle())
         // cameraPole.rotation.y = time * .1;
         // , time
         // pickHelper.pick(pickPosition, scene, camera);
         // console.log(camera.position)
+        // console.log(light.position)
         renderer.render(scene, camera);
 
         requestAnimationFrame(render);
