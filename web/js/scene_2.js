@@ -9,9 +9,9 @@ window.onload = function() {
         console.log(userData.properties)
         d3.select('#infoboard').html(
             // 'id ' + userData.properties[0] + '<br/>' +
-            '<span>Адреса:</span> ' + userData.properties[9] + '<br>' +
-            '<span>Категорія:</span> ' + userData.properties[21] + '<br>' +
-            '<span>Опис:</span> ' + userData.properties[24] + '<br>' +
+            '<span class="info-head">Адреса:</span> <span class="info-info">' + userData.properties[9] + '</span><br>' +
+            '<span class="info-head">Категорія:</span> <span class="info-info">' + userData.properties[21] + '</span><br>' +
+            '<span class="info-head">Опис:</span> <span class="info-info">' + userData.properties[24] + '</span><br>' +
             '<video width="100%" autoplay loop muted poster="./photo/' + userData.properties[23] + '"><source src="./video/' + userData.properties[18] +
             '" type="video/mp4"></video>' + '<br>'
             // 'photo ' + userData.properties[23] + '<br>' +
