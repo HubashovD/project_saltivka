@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "full_id_w89677525",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "full_id": "w89677525", "osm_id": "89677525", "osm_type": "way", "building": "apartments", "amenity": null, "type": null, "building:levels": "9", "addr:street": "Дружби Народів вулиця", "addr:housenumber": "235", "name": "вулиця Дружби Народів 235", "folders": "Зруйновані будинки", "description": "опис: Пошкодження будинку під час обстрілу<br><br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: обстріл<br>номер будинку: 235<br>фото: Drushbi_Narodiv_235.jpg<br>відео:", "altitude": 0.0, "alt_mode": "", "time_begin": "", "time_end": "", "time_when": "", "gx_media_links": "", "відео": "", "назва вулиці": "Дружби Народів", "номер будинку": "235", "опис": "Пошкодження будинку під час обстрілу", "тип вулиці": "вулиця", "фото": "Drushbi_Narodiv_235.jpg", "як пошкоджено": "обстріл" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 36.3575416, 50.0351354 ], [ 36.3573553, 50.0351083 ], [ 36.357299, 50.0352677 ], [ 36.3572052, 50.0355333 ], [ 36.3571464, 50.0356998 ], [ 36.3573328, 50.0357269 ], [ 36.3575416, 50.0351354 ] ] ] ] } }
+]
+}

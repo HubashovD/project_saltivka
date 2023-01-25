@@ -5,43 +5,17 @@ import { OrbitControls } from 'OrbitControls';
 window.onload = function() {
 
     function metadata(userData) {
-        // console.log(userData)
 
-        // var moved = false
-        // window.onmousemove = function(e) {
-        //     if (!moved) {
-        //         moved = true;
-        //         console.log('https://hubashovd.github.io/project_saltivka/web/video/' + userData.properties[0] + '.mp4 ')
-        //         d3.select('#infoboard').html(
-        //             'id ' + userData.properties[0] + '<br/>' +
-        //             'addr ' + userData.properties[3] + '<br>' +
-        //             'cat ' + userData.properties[4] + '<br>' +
-        //             'desc ' + userData.properties[5] + '<br>' +
-        //             'desc ' + userData.properties[17] + '<br>' +
-        //             '<video width="400" autoplay muted><source src="https://hubashovd.github.io/project_saltivka/web/video/' + userData.properties[0] +
-        //             '.mp4" type="video/mp4"></video>' + '<br>' +
-        //             'photo ' + userData.properties[16] + '<br>' +
-        //             'desc ' + userData.properties[12] + '<br>' +
-        //             'id ' + userData.properties[0] + '<br>' +
-        //             'id ' + userData.properties[0] + '<br>' +
-        //             'id ' + userData.properties[0] + '<br>'
-        //         )
-        //     }
-        // }
-
+        console.log(userData.properties)
         d3.select('#infoboard').html(
-            'id ' + userData.properties[0] + '<br/>' +
-            'addr ' + userData.properties[3] + '<br>' +
-            'cat ' + userData.properties[4] + '<br>' +
-            'desc ' + userData.properties[5] + '<br>' +
-            'desc ' + userData.properties[17] + '<br>' +
-            '<video width="400" autoplay muted><source src="https://hubashovd.github.io/project_saltivka/web/video/' + userData.properties[0] +
-            '.mp4" type="video/mp4"></video>' + '<br>' +
-            'photo ' + userData.properties[16] + '<br>' +
-            'desc ' + userData.properties[12] + '<br>' +
-            'id ' + userData.properties[0] + '<br>' +
-            'id ' + userData.properties[0] + '<br>' +
-            'id ' + userData.properties[0] + '<br>'
+            // 'id ' + userData.properties[0] + '<br/>' +
+            '<span>Адреса:</span> ' + userData.properties[9] + '<br>' +
+            '<span>Категорія:</span> ' + userData.properties[21] + '<br>' +
+            '<span>Опис:</span> ' + userData.properties[24] + '<br>' +
+            '<video width="100%" autoplay loop muted poster="./photo/' + userData.properties[23] + '"><source src="./video/' + userData.properties[18] +
+            '" type="video/mp4"></video>' + '<br>'
+            // 'photo ' + userData.properties[23] + '<br>' +
+            // 'video ' + userData.properties[18] + '<br>'
         )
 
 
@@ -50,10 +24,8 @@ window.onload = function() {
 
     const canvas = document.getElementById('container');
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    // console.log(window.devicePixelRatio)
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(container.getBoundingClientRect().width, container.getBoundingClientRect().height);
-    // console.log(container.getBoundingClientRect())
     renderer.outputEncoding = THREE.sRGBEncoding;
 
     renderer.shadowMap.enabled = true;
@@ -67,23 +39,6 @@ window.onload = function() {
 
     var Ambientlight = new THREE.AmbientLight(0xffffff, 0.1)
     scene.add(Ambientlight)
-
-    // const directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
-    // directionalLight.position.set = (10, 22, -45)
-    // directionalLight.castShadow = true
-    // scene.add(directionalLight);
-
-    // directionalLight.shadow.mapSize.width = 512; // default
-    // directionalLight.shadow.mapSize.height = 512; // default
-    // directionalLight.shadow.camera.near = 0.5; // default
-    // directionalLight.shadow.camera.far = 500; // default
-
-    // const sphereGeometry = new THREE.SphereGeometry(5, 15, 32);
-    // const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000 });
-    // const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-    // sphere.castShadow = true; //default is false
-    // sphere.receiveShadow = false; //default
-    // scene.add(sphere);
 
     const light = new THREE.PointLight(0xffffff, 1);
     light.position.set(0, 50, -40);
@@ -139,11 +94,10 @@ window.onload = function() {
     controls.minPolarAngle = 0.7
     controls.maxPolarAngle = 1.3
 
-    // console.log(container.getBoundingClientRect())
     const loader = new GLTFLoader();
     loader.load(
         // resource URL
-        "data/threejs20.gltf",
+        "data/threejs23.gltf",
         // called when the resource is loaded
         function(gltf) {
 
@@ -164,10 +118,10 @@ window.onload = function() {
             // animate();
 
             console.log(scene)
-            scene.children[2].children[42].castShadow = true
-            scene.children[2].children[42].receiveShadow = true
+            scene.children[2].children[68].castShadow = true
+            scene.children[2].children[68].receiveShadow = true
 
-            for (let step = 0; step < 41; step++) {
+            for (let step = 0; step < 68; step++) {
                 scene.children[2].children[step].receiveShadow = true
             }
 
@@ -175,7 +129,9 @@ window.onload = function() {
         },
         // called while loading is progressing
         function(xhr) {
-
+            if (xhr.loaded / xhr.total * 100 == 100) {
+                d3.select('#infoboard').html("")
+            } else { d3.select('#infoboard').html((xhr.loaded / xhr.total * 100) + '% loaded') }
             console.log((xhr.loaded / xhr.total * 100) + '% loaded');
 
         },
@@ -229,7 +185,7 @@ window.onload = function() {
 
             try {
                 var for_intersected = []
-                for (let step = 0; step < 41; step++) {
+                for (let step = 0; step < 67; step++) {
                     for_intersected.push(scene.children[2].children[step])
                 }
                 const intersectedObjects = this.raycaster.intersectObjects(for_intersected);

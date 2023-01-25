@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "full_id_w89704980",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "full_id": "w89704980", "osm_id": "89704980", "osm_type": "way", "building": "apartments", "amenity": null, "type": null, "building:levels": "9", "addr:street": "Наталії Ужвій вулиця", "addr:housenumber": "100", "name": "Наталії Ужвій, 100", "folders": "Зруйновані будинки", "description": "опис: Пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Внаслідок обстрілів у будинку вибито вікна<br>номер будинку: 100<br>фото: Nataliyi_Uzhviy_100.jpg<br>відео:", "altitude": 0.0, "alt_mode": "", "time_begin": "", "time_end": "", "time_when": "", "gx_media_links": "", "відео": "", "назва вулиці": "Наталії Ужвій", "номер будинку": "100", "опис": "Пошкодження", "тип вулиці": "вулиця", "фото": "Nataliyi_Uzhviy_100.jpg", "як пошкоджено": "Внаслідок обстрілів у будинку вибито вікна" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 36.3681241, 50.0387526 ], [ 36.3679767, 50.0388047 ], [ 36.3681179, 50.0389693 ], [ 36.3683201, 50.0392025 ], [ 36.3684864, 50.0393964 ], [ 36.3686321, 50.0393448 ], [ 36.3681241, 50.0387526 ] ] ] ] } }
+]
+}

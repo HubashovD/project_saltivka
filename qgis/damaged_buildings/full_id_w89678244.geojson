@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "full_id_w89678244",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "full_id": "w89678244", "osm_id": "89678244", "osm_type": "way", "building": "apartments", "amenity": null, "type": null, "building:levels": "9", "addr:street": "Гвардійців-Широнінців вулиця", "addr:housenumber": "125", "name": "вулиця Гвардійців-Широнінців 125", "folders": "Зруйновані будинки", "description": "опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Гвардійців-Широнінців<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 125<br>фото: Gvardeitsev_Shironetsov_125.JPG<br>відео:", "altitude": 0.0, "alt_mode": "", "time_begin": "", "time_end": "", "time_when": "", "gx_media_links": "", "відео": "", "назва вулиці": "Гвардійців-Широнінців", "номер будинку": "125", "опис": "Пошкодження", "тип вулиці": "вулиця", "фото": "Gvardeitsev_Shironetsov_125.JPG", "як пошкоджено": "Фасад та вікна пошкоджені внаслідок обстрілу" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 36.3610607, 50.040226 ], [ 36.3610585, 50.0400473 ], [ 36.3610553, 50.0397851 ], [ 36.3610534, 50.0396306 ], [ 36.3608381, 50.0396317 ], [ 36.3608454, 50.0402271 ], [ 36.3610607, 50.040226 ] ] ] ] } }
+]
+}

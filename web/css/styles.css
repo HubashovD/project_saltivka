@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: "proxima";
+    src: url("../fonts/PROXIMA-NOVA-A.OTF") format("opentype")
+}
+
+@font-face {
     font-family: "proxima-bold";
     src: url("../fonts/PROXIMA-NOVA-A-BOLD.OTF") format("opentype")
 }
@@ -29,31 +34,238 @@
     }
 }
 
-article {
-    margin-top: 5vh;
+@media (max-width: 479px) {
+    #main-logo {
+        width: 50% !important;
+    }
+    #fb {
+        width: 10vw !important;
+    }
+    #tw {
+        width: 10vw !important;
+    }
+    #cover {
+        height: 100% !important;
+    }
+    #title-wrapper {
+        margin-left: 0 !important;
+        margin-top: 30% !important;
+    }
+    #lead {
+        display: none;
+    }
+    #lead-mobile {
+        display: block !important;
+        font-size: 20px !important;
+        font-family: "proxima-semi";
+        margin: auto;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        line-height: 1.5;
+    }
+    .usual-text-block p {
+        margin-top: 1vh;
+        width: 90% !important;
+        margin: auto !important;
+    }
+    h1.title {
+        letter-spacing: 1px !important;
+        font-size: calc(30px + 1.5vw) !important;
+    }
+    .h3-header {
+        margin: auto !important;
+        text-align: center;
+        margin-top: 10% !important;
+        font-size: 40px !important;
+    }
+    .semi-header {
+        margin: auto !important;
+        width: 90% !important;
+        margin-top: 5vh !important;
+        margin-bottom: 5vh !important;
+    }
+    #main-table {
+        display: block !important;
+    }
+    #father_container {
+        height: 50vh !important;
+        border-right: none !important
+    }
+    #container {
+        height: 50vh !important;
+    }
+    #textBlocks {
+        width: 100vw !important;
+        z-index: 1 !important;
+    }
+    .step {
+        width: 100% !important;
+        margin-right: 10px;
+        padding: auto;
+    }
+    .step p {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+        font-size: 20px !important;
+    }
+    .h4-header {
+        font-size: 24px !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .donate-us p {
+        align-items: center !important;
+        margin-left: 5vw !important;
+    }
+    .rubrics-container {
+        display: none !important;
+    }
+    #menu-wrapper {
+        display: block !important;
+    }
 }
 
-#main-logo {
-    position: absolute;
-    margin-left: 3vw;
-    margin-top: 3vh;
-    width: 15vw;
+@media (min-width: 480px) and (max-width: 1023px) {
+    .rubrics-container {
+        display: none !important;
+    }
+    #menu-wrapper {
+        display: block !important;
+    }
+    #main-logo {
+        width: 20% !important;
+    }
+    #fb {
+        width: 3vw !important;
+    }
+    #tw {
+        width: 3vw !important;
+    }
+    #cover {
+        height: 100% !important;
+    }
+    #title-wrapper {
+        margin-left: 0 !important;
+    }
+    #lead {
+        width: 80% !important;
+        margin-top: 25% !important;
+        font-size: 24px !important;
+    }
+    #lead-mobile {
+        display: none;
+    }
+    .usual-text-block p {
+        margin-top: 1vh;
+        width: 70% !important;
+        margin: auto !important;
+    }
+    .semi-header {
+        font-size: calc(20px + 0.5vw);
+        font: "proxima-bold" !important;
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
+        ;
+    }
+    #main-table {
+        display: block !important;
+    }
+    #father_container {
+        height: 50vh !important;
+        border-right: none !important
+    }
+    #container {
+        height: 50vh !important;
+    }
+    #textBlocks {
+        width: 100vw !important;
+        z-index: 1 !important;
+    }
+    .h4-header {
+        font-size: 30px !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .donate-us {
+        align-items: center !important;
+        width: 80% !important;
+    }
+}
+
+.share-btn {
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.fa-facebook {
+    letter-spacing: 1px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Brands";
+    box-sizing: content-box;
+    margin: 0.5em;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #616161;
+    color: #a6a6a6;
+    border-radius: 50%;
+    padding: 0.5em;
+    font-size: 2.0em;
+    line-height: 1;
+    transition: all 0.5s;
+    stroke: white;
+}
+
+.fa-twitter {
+    letter-spacing: 1px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Brands";
+    box-sizing: content-box;
+    margin: 0.5em;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #616161;
+    color: #a6a6a6;
+    border-radius: 50%;
+    padding: 0.5em;
+    font-size: 2.0em;
+    line-height: 1;
+    transition: all 0.5s;
 }
 
 #socio-icons {
     margin-left: 3vw;
-    margin-top: 7vh;
-}
-
-#tw {
     font-family: 'Roboto Mono', monospace;
-    width: 3vw;
-    margin-left: 0.5vw;
-}
-
-#fb {
-    font-family: 'Roboto Mono', monospace;
-    width: 3vw;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    position: absolute;
 }
 
 .icon-wrapper {
@@ -63,6 +275,59 @@ article {
     justify-content: flex-start;
 }
 
+#tw {
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 0.5vw;
+}
+
+#fb {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#menu-wrapper {
+    grid-template-columns: 1fr 6fr;
+    width: 100%;
+    display: grid;
+    z-index: 999;
+}
+
+#main-logo {
+    grid-column: 1;
+    position: relative;
+    margin-left: 3vw;
+    margin-top: 2vh;
+    width: 10vw;
+    z-index: 999;
+}
+
+.rubrics-container {
+    grid-column: 2;
+    margin-top: 1%;
+    position: relative;
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 999;
+}
+
+.rubric {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+    margin: auto;
+}
+
+.rubric a span {
+    color: white !important;
+}
+
+article {
+    margin-top: 5vh;
+}
+
 .header-wrapper {
     font-family: 'Roboto Mono', monospace;
     width: 90%;
@@ -70,11 +335,22 @@ article {
     -webkit-box-align: center;
     align-items: center;
     position: absolute;
+    z-index: 999;
+}
+
+#black-box {
+    background-color: #000;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 30%;
+    z-index: 1;
+    margin-left: -1vw
 }
 
 #main-header {
     height: 100vh;
-    width: calc(100% + 2em);
+    width: 100%;
     margin-left: -1em;
     display: flex;
     /* background-image: url('https://texty.github.io/project_russian_war_structure/pic/cover.png'); */
@@ -82,22 +358,16 @@ article {
     overflow-x: hidden;
 }
 
-#socio-icons {
-    font-family: 'Roboto Mono', monospace;
-    display: flex;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    position: absolute;
-}
-
 .title-wrapper {
     max-width: 80%;
     margin: auto !important;
+    z-index: 999;
 }
 
 h1.title {
     color: white;
-    font-size: calc(30px + 1.5vw);
+    font: "proxima-bold";
+    font-size: calc(50px + 1.5vw);
     font-weight: 800;
     letter-spacing: 5px;
     text-align: center;
@@ -109,7 +379,7 @@ h1.title {
     color: white;
     text-transform: none;
     text-align: center;
-    font-size: calc(18px + 0.7vw);
+    font-size: calc(20px + 0.7vw);
 }
 
 #autors {
@@ -138,8 +408,10 @@ h1.title {
     height: fit-content;
     margin-left: 25vw;
     margin-right: 25vw;
-    font: 24px "proxima-medium";
-    color: #555;
+    font-family: "proxima";
+    font-size: calc(14px + 0.5vw);
+    color: #000000;
+    line-height: 1.5;
 }
 
 .semi-header {
@@ -177,4 +449,8 @@ h1.title {
     margin-top: 1vh;
     margin-bottom: 1vh;
     margin-right: 1vw;
+}
+
+#infoboard span {
+    color: red;
 }

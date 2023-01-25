@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "full_id_w89737052",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "full_id": "w89737052", "osm_id": "89737052", "osm_type": "way", "building": "yes", "amenity": "hospital", "type": null, "building:levels": "8", "addr:street": null, "addr:housenumber": null, "name": "вулиця\nМетробудівників 19", "folders": "Зруйновані будинки", "description": "опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 19<br>фото: vulitsa_Metrobudbvnikiv_19_bolnitsa_№10 <br>відео: Metrobudivnykiv_19_Polyclinic_10.mp4", "altitude": 0.0, "alt_mode": "", "time_begin": "", "time_end": "", "time_when": "", "gx_media_links": "", "відео": "Metrobudivnykiv_19_Polyclinic_10.mp4", "назва вулиці": "Метробудівників", "номер будинку": "19", "опис": "Пошкодження", "тип вулиці": "вулиця", "фото": "vulitsa_Metrobudbvnikiv_19_bolnitsa_№10", "як пошкоджено": "Фасад та вікна пошкоджені внаслідок обстрілу" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 36.3610936, 50.0384194 ], [ 36.3609604, 50.0382811 ], [ 36.3607117, 50.03838 ], [ 36.3608469, 50.0385203 ], [ 36.3609515, 50.0384787 ], [ 36.3609955, 50.0385244 ], [ 36.3606281, 50.0386704 ], [ 36.360729, 50.0387751 ], [ 36.3609846, 50.0386735 ], [ 36.3613798, 50.0385164 ], [ 36.361283, 50.0384159 ], [ 36.3610788, 50.0384971 ], [ 36.3610288, 50.0384452 ], [ 36.3610936, 50.0384194 ] ] ] ] } }
+]
+}

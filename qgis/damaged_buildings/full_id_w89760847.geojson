@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "full_id_w89760847",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "full_id": "w89760847", "osm_id": "89760847", "osm_type": "way", "building": "apartments", "amenity": null, "type": null, "building:levels": "9", "addr:street": "Метробудівників вулиця", "addr:housenumber": "6", "name": "вулиця Метробудівників 6", "folders": "Зруйновані будинки", "description": "опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 6<br>фото: Metrobudivnykiv_6.png<br>відео: Metrobudivnykiv_6.mp4", "altitude": 0.0, "alt_mode": "", "time_begin": "", "time_end": "", "time_when": "", "gx_media_links": "", "відео": "Metrobudivnykiv_6.mp4", "назва вулиці": "Метробудівників", "номер будинку": "6", "опис": "Пошкодження", "тип вулиці": "вулиця", "фото": "Metrobudivnykiv_6.png", "як пошкоджено": "Фасад та вікна пошкоджені внаслідок обстрілу" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 36.3529149, 50.0393569 ], [ 36.35182, 50.0393965 ], [ 36.351831, 50.0395226 ], [ 36.3520836, 50.0395135 ], [ 36.3524541, 50.0395071 ], [ 36.35277, 50.0394886 ], [ 36.352926, 50.039483 ], [ 36.3529149, 50.0393569 ] ] ] ] } }
+]
+}

@@ -5,10 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <!-- attribute('building:levels') * 3 -->
-    <!-- "three": "https://unpkg.com/three@0.138.0/build/three.module.js" -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="fb:app_id" content="329250623807149">
+    <meta property="og:site_name" content="ТЕКСТИ.ORG.UA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Звідки і як Росія обстрілює Миколаїв. Ворожі позиції на супутникових знімках">
+    <meta property="og:image" content="https://raw.githubusercontent.com/HubashovD/project_mykolaiv_shelling_web/main/pic/socio-cover.png">
+    <meta property="og:description" content="Російські військові намагаються сховатися, але в них не виходить. Пильне око приватних супутників знайде будь-яку позицію окупантів.">
+    <meta property="og:url" content="https://texty.org.ua/d/2022/mykolaiv_shelling/">
+
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:site" content="@textyorgua">
+    <meta property="twitter:account_id" content="49572937">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://texty.org.ua/d/2022/mykolaiv_shelling/">
+    <meta name="twitter:title" content="Звідки і як Росія обстрілює Миколаїв. Ворожі позиції на супутникових знімках">
+    <meta name="twitter:description" content="Російські військові намагаються сховатися, але в них не виходить. Пильне око приватних супутників знайде будь-яку позицію окупантів.">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
+
+    <!-- Other Meta Tags -->
+    <meta name="title" content="РОЗСТРІЛЯНА, АЛЕ ЖИВА САЛТІВКА">
+    <meta name="description" content="Російські військові намагаються сховатися, але в них не виходить. Пильне око приватних супутників знайде будь-яку позицію окупантів.">
+
+
+    <title>РОЗСТРІЛЯНА, АЛЕ ЖИВА САЛТІВКА</title>
+
+
     <script type="importmap">
         { "imports": { "three": "https://unpkg.com/three@0.138.0/build/three.module.js" , "OrbitControls": "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js", "GLTFLoader": "https://unpkg.com/three@0.138.0/examples/jsm/loaders/GLTFLoader.js",
         "BufferGeometryUtils" : "https://unpkg.com/three@0.138.0/addons/utils/BufferGeometryUtils.js"} }
@@ -28,34 +58,44 @@
 </head>
 
 <body>
+    <div id='black-box'></div>
+    <div id='menu-wrapper'>
+        <a href="https://texty.org.ua/"><img src="./pic/white_logo.svg" id="main-logo"></a>
+        <nav class="rubrics-container">
+            <div class="rubric r1"><a href="https://texty.org.ua/tag/khid-vijny/"><span><b></b>ХІД ВІЙНИ</span></a>
+            </div>
+            <div class="rubric r2"><a href="https://texty.org.ua/tag/dezinformatsija/"><span>#Інфовійна</span></a></div>
+            <div class="rubric r3"><a href="https://texty.org.ua/articles/"><span>Статті</span></a></div>
+            <div class="rubric r4"><a href="https://texty.org.ua/fragments/"><span>Фрагменти</span></a></div>
+            <div class="rubric r4"><a href="https://texty.org.ua/selected/"><span>ВИБІР РЕДАКЦІЇ</span></a></div>
+        </nav>
+    </div>
 
     <div class="header-wrapper">
-        <a href="https://texty.org.ua/"><img src="pic/white_logo.svg" id="main-logo"></a>
-
 
         <div id="socio-icons">
             <!--fb-->
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2022/orcs-army-structure/" target="_blank" class="share-btn">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2022/mykolaiv_shelling/" target="_blank" class="share-btn">
                 <div class="icon-wrapper">
                     <img id="fb" src="pic/facebook.png">
                 </div>
             </a>
-
             <!--tw -->
-            <a href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2022/orcs-army-structure/" target="_blank" class="share-btn">
+            <a href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2022/mykolaiv_shelling/" target="_blank" class="share-btn">
                 <div class="icon-wrapper">
                     <img id="tw" src="pic/twitter.png">
                 </div>
             </a>
-
         </div>
     </div>
     <div id="main-header">
-        <video id="background-video" autoplay loop muted poster="https://hubashovd.github.io/project_saltivka/web/pic/cover.jpg">  
-            <source src="https://hubashovd.github.io/project_saltivka/web/video/26.mp4" type="video/mp4"></video>
+
+        <video id="background-video" autoplay loop muted poster="./pic/cover.jpg">  
+            <source src="./video/NataliyiUzhviy62.mp4" type="video/mp4"></video>
+
         <div class='title-wrapper'>
-            <h1 class='title'> Розстріляна, але жива Салтівка. </h1>
-            <h3>Як зимує знищений густонаселений житловий масив у Харкові
+            <h1 class='title'> Розстріляна, але жива Салтівка</h1>
+            <h3>Як зимує знищений густонаселений житловий масив у Харкові?
             </h3>
         </div>
     </div>
@@ -74,7 +114,7 @@
                 </p>
             </div>
             <div class='semi-header'>
-                <p>“Від моєї квартири лишився тільки вхід” (Метробудівників, 9)
+                <p>“Від моєї квартири лишився тільки вхід” <br>(Метробудівників, 9)
                 </p>
             </div>
             <div class='usual-text-block'>
@@ -95,7 +135,7 @@
                 </div>
             </div>
             <div class='semi-header'>
-                <p>“Якщо я тут не одужаю, то ніде не вилікуюсь” (Наталії Ужвій, 72)
+                <p>“Якщо я тут не одужаю, то ніде не вилікуюсь” <br>(Наталії Ужвій, 72)
                 </p>
             </div>
             <div class='usual-text-block'>
