@@ -3,6 +3,42 @@
   <Document>
     <name>Карта Салтівка</name>
     <description/>
+    <Style id="icon-1899-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
     <Style id="icon-1899-0288D1-normal">
       <IconStyle>
         <color>ffd18802</color>
@@ -39,9 +75,9 @@
         <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1899-0288D1-nodesc-normal">
+    <Style id="icon-1899-880E4F-normal">
       <IconStyle>
-        <color>ffd18802</color>
+        <color>ff4f0e88</color>
         <scale>1</scale>
         <Icon>
           <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
@@ -51,13 +87,10 @@
       <LabelStyle>
         <scale>0</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <Style id="icon-1899-0288D1-nodesc-highlight">
+    <Style id="icon-1899-880E4F-highlight">
       <IconStyle>
-        <color>ffd18802</color>
+        <color>ff4f0e88</color>
         <scale>1</scale>
         <Icon>
           <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
@@ -67,18 +100,15 @@
       <LabelStyle>
         <scale>1</scale>
       </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1899-0288D1-nodesc">
+    <StyleMap id="icon-1899-880E4F">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+        <styleUrl>#icon-1899-880E4F-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+        <styleUrl>#icon-1899-880E4F-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Style id="poly-F57C00-4801-0-nodesc-normal">
@@ -122,42 +152,12 @@
     <Folder>
       <name>Зруйновані будинки</name>
       <Placemark>
-        <name>Точка 2</name>
-        <description><![CDATA[опис: <br>тип вулиці: <br>назва вулиці: <br>як пошкоджено: <br>номер будинку: <br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <name>Дружби Народів 259</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: Внаслідок артобстрілу 24 березня порушена стіна житлового будинку<br>номер будинку: <br>фото: Drushbi_Narodiv_259.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value/>
-          </Data>
-          <Data name="тип вулиці">
-            <value/>
-          </Data>
-          <Data name="назва вулиці">
-            <value/>
-          </Data>
-          <Data name="як пошкоджено">
-            <value/>
-          </Data>
-          <Data name="номер будинку">
-            <value/>
-          </Data>
-          <Data name="фото">
-            <value/>
-          </Data>
-        </ExtendedData>
-        <Point>
-          <coordinates>
-            36.3496917,50.0365726,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>будинок ххх</name>
-        <description><![CDATA[опис: артобстріл 24 березня, порушена стіна<br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: <br>номер будинку: <br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
-        <ExtendedData>
-          <Data name="опис">
-            <value>артобстріл 24 березня, порушена стіна</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -166,12 +166,15 @@
             <value>Дружби Народів</value>
           </Data>
           <Data name="як пошкоджено">
-            <value/>
+            <value>Внаслідок артобстрілу 24 березня порушена стіна житлового будинку</value>
           </Data>
           <Data name="номер будинку">
             <value/>
           </Data>
           <Data name="фото">
+            <value>Drushbi_Narodiv_259.jpg</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -183,11 +186,11 @@
       </Placemark>
       <Placemark>
         <name>Джерельна вулиця, 7</name>
-        <description><![CDATA[опис: Пошкодження будинку<br>тип вулиці: вулиця<br>назва вулиці: Джерельна вулиця<br>як пошкоджено: Внаслидок ракетного удару або удару системи залпового вогню, повністю знищено житлову квартиру з меблями та технікою та іншим майном.<br>номер будинку: 7<br>фото: Джерельна вулиця, 7]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Джерельна вулиця<br>як пошкоджено: Внаслідок ракетного удару або удару системи залпового вогню, у житловому будинку повністю знищено квартиру з меблями та технікою та іншим майном.<br>номер будинку: 7<br>фото: Vulicya_Dsherelna_7.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Пошкодження будинку</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -196,13 +199,16 @@
             <value>Джерельна вулиця</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>Внаслидок ракетного удару або удару системи залпового вогню, повністю знищено житлову квартиру з меблями та технікою та іншим майном.</value>
+            <value>Внаслідок ракетного удару або удару системи залпового вогню, у житловому будинку повністю знищено квартиру з меблями та технікою та іншим майном.</value>
           </Data>
           <Data name="номер будинку">
             <value>7</value>
           </Data>
           <Data name="фото">
-            <value>Джерельна вулиця, 7</value>
+            <value>Vulicya_Dsherelna_7.jpg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -213,11 +219,11 @@
       </Placemark>
       <Placemark>
         <name>Гвардійців-Широнінців, 101</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: вулиця Гвардійців-Широнінців<br>як пошкоджено: 1.04.2022 В будівлю влучило два артилерійських снаряди. Один потрапив у дім через вікно, вибухнув усередині будівлі. Другий знаряд потрапив у подвір'я<br>номер будинку: 101<br>фото: вулиця Гвардійців-Широнінців, 101]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: вулиця Гвардійців-Широнінців<br>як пошкоджено: 1 квітня будівлю влучило два артилерійських снаряди. Один потрапив у дім через вікно, вибухнув усередині. Другий знаряд потрапив у подвір'я<br>номер будинку: 101<br>фото: Gvardiiciv_Shironintsiv_101.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -226,13 +232,16 @@
             <value>вулиця Гвардійців-Широнінців</value>
           </Data>
           <Data name="як пошкоджено">
-            <value><![CDATA[1.04.2022 В будівлю влучило два артилерійських снаряди. Один потрапив у дім через вікно, вибухнув усередині будівлі. Другий знаряд потрапив у подвір'я]]></value>
+            <value><![CDATA[1 квітня будівлю влучило два артилерійських снаряди. Один потрапив у дім через вікно, вибухнув усередині. Другий знаряд потрапив у подвір'я]]></value>
           </Data>
           <Data name="номер будинку">
             <value>101</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Гвардійців-Широнінців, 101</value>
+            <value>Gvardiiciv_Shironintsiv_101.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -243,26 +252,29 @@
       </Placemark>
       <Placemark>
         <name>Гвардійців-Широкінців, 92</name>
-        <description><![CDATA[опис: Серйозне пошкодження внутрішньої частини будинку та газової магістралі<br>тип вулиці: вулиця<br>назва вулиці: Гвардійців-Широкінців<br>як пошкоджено: 4.03.22 У другому під'їзді зруйнована холодна частина балкону між четвертим та п'ятим поверхами в наслідок чого був зсув плит та суттєве пошкодження внутрішньої частини під'їзду. Попадання снаряду у козирок вхідної частини під'їзду з пошкодженням газової труби.<br>номер будинку: 92<br>фото: вулиця Гвардійців-Широнінців, 92]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Гвардійців-Широнінців<br>як пошкоджено: 4 березня внаслідок обстрілу у другому під'їзді зруйнований відкритий балкон між четвертим та п'ятим поверхами. В результаті стався зсув плит перекриття.  Також снаряд потрапив у козирок над під'їздом, пошкоджена газова труба.  <br>номер будинку: 92<br>фото: Gvardiiciv_Shironintsiv_92.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження внутрішньої частини будинку та газової магістралі</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
           </Data>
           <Data name="назва вулиці">
-            <value>Гвардійців-Широкінців</value>
+            <value>Гвардійців-Широнінців</value>
           </Data>
           <Data name="як пошкоджено">
-            <value><![CDATA[4.03.22 У другому під'їзді зруйнована холодна частина балкону між четвертим та п'ятим поверхами в наслідок чого був зсув плит та суттєве пошкодження внутрішньої частини під'їзду. Попадання снаряду у козирок вхідної частини під'їзду з пошкодженням газової труби.]]></value>
+            <value><![CDATA[4 березня внаслідок обстрілу у другому під'їзді зруйнований відкритий балкон між четвертим та п'ятим поверхами. В результаті стався зсув плит перекриття.  Також снаряд потрапив у козирок над під'їздом, пошкоджена газова труба.  ]]></value>
           </Data>
           <Data name="номер будинку">
             <value>92</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Гвардійців-Широнінців, 92</value>
+            <value>Gvardiiciv_Shironintsiv_92.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -273,11 +285,11 @@
       </Placemark>
       <Placemark>
         <name>Метробудівників 40</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку та тримальних плит<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників <br>як пошкоджено: 5.03.22 Серйозне пошкодження будинку та тримальних плит у кількох квартирах, пожежа внаслідок артобстрілу<br>номер будинку: 40<br>фото: вулиця Метробудівників 40]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників <br>як пошкоджено: Після артилерійського обстрілу 5 березня в будинку виникла пожежа, пошкоджені тримальні плити у кількох квартирах.<br>номер будинку: 40<br>фото: Metrobudbvnikiv_40.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку та тримальних плит</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -286,13 +298,16 @@
             <value>Метробудівників </value>
           </Data>
           <Data name="як пошкоджено">
-            <value>5.03.22 Серйозне пошкодження будинку та тримальних плит у кількох квартирах, пожежа внаслідок артобстрілу</value>
+            <value>Після артилерійського обстрілу 5 березня в будинку виникла пожежа, пошкоджені тримальні плити у кількох квартирах.</value>
           </Data>
           <Data name="номер будинку">
             <value>40</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Метробудівників 40</value>
+            <value>Metrobudbvnikiv_40.jpg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -303,11 +318,11 @@
       </Placemark>
       <Placemark>
         <name>Метробудівників, 25</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: 29.03.22 В будинку зруйновані квартири на 9 та 4 поверсі прямим потраплянням снаряду. Пошкодженні технічні поверхи та комунікації у 1 та 3 під'їзді.<br>номер будинку: 25<br>фото: вулиця Метробудівників, 25]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: 29 березня прямим влучанням російського снаряда зруйновані квартири на 9-му і 4-му поверхах. Пошкоджені технічні поверхи та комунікації у першому і третьому під'їздах. <br>номер будинку: 25<br>фото: Metrobudivnykiv_25.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -316,13 +331,16 @@
             <value>Метробудівників</value>
           </Data>
           <Data name="як пошкоджено">
-            <value><![CDATA[29.03.22 В будинку зруйновані квартири на 9 та 4 поверсі прямим потраплянням снаряду. Пошкодженні технічні поверхи та комунікації у 1 та 3 під'їзді.]]></value>
+            <value><![CDATA[29 березня прямим влучанням російського снаряда зруйновані квартири на 9-му і 4-му поверхах. Пошкоджені технічні поверхи та комунікації у першому і третьому під'їздах. ]]></value>
           </Data>
           <Data name="номер будинку">
             <value>25</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Метробудівників, 25</value>
+            <value>Metrobudivnykiv_25.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -333,11 +351,11 @@
       </Placemark>
       <Placemark>
         <name>Метробудівників, 27</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: 1.05.22 Снаряд пролетів через дах, пробивши квартиру на 9 поверсі, квартиру на 8 поверсі та стіну у тамбур на 8 поверсі. Квартири згоріли, комунікації та електрика також згоріли. Стіна відійшла і покосилась<br>номер будинку: 27<br>фото: вулиця Метробудівників, 27]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: Першого травня  російський снаряд пробив дах, зруйнувавши квартири на 9-му і 8-му поверхах, стину і тамбур на 8 поверсі. Обидві квартири згоріли, знищені комунікації, порушені тримальні стіни. <br>номер будинку: 27<br>фото: Metrobudivnykiv_27.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -346,13 +364,16 @@
             <value>Метробудівників</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>1.05.22 Снаряд пролетів через дах, пробивши квартиру на 9 поверсі, квартиру на 8 поверсі та стіну у тамбур на 8 поверсі. Квартири згоріли, комунікації та електрика також згоріли. Стіна відійшла і покосилась</value>
+            <value>Першого травня  російський снаряд пробив дах, зруйнувавши квартири на 9-му і 8-му поверхах, стину і тамбур на 8 поверсі. Обидві квартири згоріли, знищені комунікації, порушені тримальні стіни. </value>
           </Data>
           <Data name="номер будинку">
             <value>27</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Метробудівників, 27</value>
+            <value>Metrobudivnykiv_27.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -363,11 +384,11 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 108</name>
-        <description><![CDATA[опис: Серйозне пошкодження будівлі<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 3.03.22 Зруйнована будівля магазину<br>номер будинку: 108<br>фото: вулиця Наталії Ужвій, 108]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 3 березня внаслідок обстрілу зруйнована будівля магазину <br>номер будинку: 108<br>фото: NataliyiUzhviy_108.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будівлі</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -376,13 +397,16 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>3.03.22 Зруйнована будівля магазину</value>
+            <value>3 березня внаслідок обстрілу зруйнована будівля магазину </value>
           </Data>
           <Data name="номер будинку">
             <value>108</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Наталії Ужвій, 108</value>
+            <value>NataliyiUzhviy_108.jpg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -393,11 +417,11 @@
       </Placemark>
       <Placemark>
         <name>Гвардійців-Широнінців, 121</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця<br>назва вулиці: Гвардійців-Широнінців<br>як пошкоджено: Перший раз (06.03.2022) влучив снаряд на 5-му - 6-му поверсі 7-го входу (лівий бік входу), після чого сталася пожежа на 5-му, 6-му і 7-му поверхах. Другий раз (01-02.05.2022) влучив майже так само з подальшою пожежею на 6-му, 7-му і 8-му поверхах.<br>номер будинку: 121<br>фото: вулиця Гвардійців-Широнінців, 121]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Гвардійців-Широнінців<br>як пошкоджено: 6 березня снаряд влучив на 5-му і 6-му поверхах сьомого під'їзду (зліва). Потім почалася пожежа на 5, 6, 7-му поверхах. Ще один російський снаряд прилетів 1-2 травня. Також почалася пожежа, яка охопила 6-й, 7-й, 8-й поверхи. <br>номер будинку: 121<br>фото: Gvardeitsev_Shironentsov_121.JPG<br>відео: Hvardiytsiv_Shyronintsiv_121.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -406,13 +430,16 @@
             <value>Гвардійців-Широнінців</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>Перший раз (06.03.2022) влучив снаряд на 5-му - 6-му поверсі 7-го входу (лівий бік входу), після чого сталася пожежа на 5-му, 6-му і 7-му поверхах. Другий раз (01-02.05.2022) влучив майже так само з подальшою пожежею на 6-му, 7-му і 8-му поверхах.</value>
+            <value><![CDATA[6 березня снаряд влучив на 5-му і 6-му поверхах сьомого під'їзду (зліва). Потім почалася пожежа на 5, 6, 7-му поверхах. Ще один російський снаряд прилетів 1-2 травня. Також почалася пожежа, яка охопила 6-й, 7-й, 8-й поверхи. ]]></value>
           </Data>
           <Data name="номер будинку">
             <value>121</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Гвардійців-Широнінців, 121</value>
+            <value>Gvardeitsev_Shironentsov_121.JPG</value>
+          </Data>
+          <Data name="відео">
+            <value>Hvardiytsiv_Shyronintsiv_121.mp4</value>
           </Data>
         </ExtendedData>
         <Point>
@@ -423,11 +450,11 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 92</name>
-        <description><![CDATA[<img src="https://doc-0o-7g-mymaps.googleusercontent.com/untrusted/hostedimage/h5jjnpt719lactsl4ufffquaic/kdb4p602atk62foook315fdkag/1673875554000/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AKgB-9lc-9ZIRX2md-cQH6ejCTs1Lo583TVUEbx7f4Z1uhSZ7wHl-aUkUqWCYXXNvHUzupjJ6_8Mh1TI4hXcuwRIY_09YtIB0v3EmP2EYOobPsSIKs69g-1I-RGcWiishfpGotIiO9Rz2RTI2E4z0wJLgh1lNRk0_41K_Id9z-h6I6XbGEYQ7ZK1qhYIe6o32xwBa8E?session=0&fife" height="200" width="auto" /><br><br>опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 5.03.22 Внаслідок обстрілу сталося обвалення тримальних конструкцій та фасаду житлового будинку<br>номер будинку: 92<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 5 березня внаслідок обстрілу в житловому будинку обвалилися тримальні конструкції і фасад.<br>номер будинку: 92<br>фото: Nataliyi_Uzhviy_92.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -436,16 +463,16 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>5.03.22 Внаслідок обстрілу сталося обвалення тримальних конструкцій та фасаду житлового будинку</value>
+            <value>5 березня внаслідок обстрілу в житловому будинку обвалилися тримальні конструкції і фасад.</value>
           </Data>
           <Data name="номер будинку">
             <value>92</value>
           </Data>
           <Data name="фото">
-            <value/>
+            <value>Nataliyi_Uzhviy_92.jpeg</value>
           </Data>
-          <Data name="gx_media_links">
-            <value><![CDATA[https://doc-0o-7g-mymaps.googleusercontent.com/untrusted/hostedimage/h5jjnpt719lactsl4ufffquaic/kdb4p602atk62foook315fdkag/1673875554000/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AKgB-9lc-9ZIRX2md-cQH6ejCTs1Lo583TVUEbx7f4Z1uhSZ7wHl-aUkUqWCYXXNvHUzupjJ6_8Mh1TI4hXcuwRIY_09YtIB0v3EmP2EYOobPsSIKs69g-1I-RGcWiishfpGotIiO9Rz2RTI2E4z0wJLgh1lNRk0_41K_Id9z-h6I6XbGEYQ7ZK1qhYIe6o32xwBa8E?session=0&fife]]></value>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -456,11 +483,11 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 86</name>
-        <description><![CDATA[<img src="https://doc-0g-7g-mymaps.googleusercontent.com/untrusted/hostedimage/h5jjnpt719lactsl4ufffquaic/d90nvpcbrc7np8huhs4oj2ea4k/1673875554000/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AKgB-9myk2GUgRX53y3TTXR5jrQUz8JNwttaLayPtD9ht_tIPdVuh0EqvPPIwzKkSHvyojeWuJ6tA-avIi5v_4INkQj1LdFWUOjYXOMQH2SmzowauqP-Pet9NJtxix4_zRRbx3Urqz5WaWnmi2zL_hSBngNCwybwf5IkbGHrHVasrqeR6TuvNYKVZpNXI868ns29zbk?session=0&fife" height="200" width="auto" /><br><br>опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: В будинок з 2 березня впродовж кількох місяців багато разів потрапляли російські снаряди та ракети, які зруйнували будинок майже повністю<br>номер будинку: 86<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Будинок зруйновано практично вщент. Упродовж кількох місяців в нього потрапляли російські снаряди і ракети. Перше влучання було другого березня.<br>номер будинку: 86<br>фото: NataliyiUzhviy_86.jpg<br>відео: NataliyiUzhviy_86.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -469,16 +496,16 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>В будинок з 2 березня впродовж кількох місяців багато разів потрапляли російські снаряди та ракети, які зруйнували будинок майже повністю</value>
+            <value>Будинок зруйновано практично вщент. Упродовж кількох місяців в нього потрапляли російські снаряди і ракети. Перше влучання було другого березня.</value>
           </Data>
           <Data name="номер будинку">
             <value>86</value>
           </Data>
           <Data name="фото">
-            <value/>
+            <value>NataliyiUzhviy_86.jpg</value>
           </Data>
-          <Data name="gx_media_links">
-            <value><![CDATA[https://doc-0g-7g-mymaps.googleusercontent.com/untrusted/hostedimage/h5jjnpt719lactsl4ufffquaic/d90nvpcbrc7np8huhs4oj2ea4k/1673875554000/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AKgB-9myk2GUgRX53y3TTXR5jrQUz8JNwttaLayPtD9ht_tIPdVuh0EqvPPIwzKkSHvyojeWuJ6tA-avIi5v_4INkQj1LdFWUOjYXOMQH2SmzowauqP-Pet9NJtxix4_zRRbx3Urqz5WaWnmi2zL_hSBngNCwybwf5IkbGHrHVasrqeR6TuvNYKVZpNXI868ns29zbk?session=0&fife]]></value>
+          <Data name="відео">
+            <value>NataliyiUzhviy_86.mp4</value>
           </Data>
         </ExtendedData>
         <Point>
@@ -489,11 +516,11 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 74</name>
-        <description><![CDATA[опис: пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Влучання та пожежа на 8-9 поверхах 2 під'їзду, ударною хвилею вибиті вікна<br>номер будинку: 74<br>фото: вулиця Наталії Ужвій, 74]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Пожежа у квартирах на 8-9 поверхах у другому під'їзді -- внаслідок влучання снаряду. Ударною хвилею вибиті вікна<br>номер будинку: 74<br>фото: Nataliyi_Uzhviy_74.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>пошкодження будинку</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -502,13 +529,16 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value><![CDATA[Влучання та пожежа на 8-9 поверхах 2 під'їзду, ударною хвилею вибиті вікна]]></value>
+            <value><![CDATA[Пожежа у квартирах на 8-9 поверхах у другому під'їзді -- внаслідок влучання снаряду. Ударною хвилею вибиті вікна]]></value>
           </Data>
           <Data name="номер будинку">
             <value>74</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Наталії Ужвій, 74</value>
+            <value>Nataliyi_Uzhviy_74.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -518,42 +548,12 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Наталії Ужвій, 76</name>
-        <description><![CDATA[опис: Серйозне пошкодження будівлі дитсадка<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 7.03.22 знищений окупантами «стратегічний» дитячий садок №464 у Харкові на Салтівці<br>номер будинку: 76<br>фото: вулиця_Наталіі_Ужвіи_76_Харків_Харківська_область_61195]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
-        <ExtendedData>
-          <Data name="опис">
-            <value>Серйозне пошкодження будівлі дитсадка</value>
-          </Data>
-          <Data name="тип вулиці">
-            <value>вулиця </value>
-          </Data>
-          <Data name="назва вулиці">
-            <value>Наталії Ужвій</value>
-          </Data>
-          <Data name="як пошкоджено">
-            <value>7.03.22 знищений окупантами «стратегічний» дитячий садок №464 у Харкові на Салтівці</value>
-          </Data>
-          <Data name="номер будинку">
-            <value>76</value>
-          </Data>
-          <Data name="фото">
-            <value>вулиця_Наталіі_Ужвіи_76_Харків_Харківська_область_61195</value>
-          </Data>
-        </ExtendedData>
-        <Point>
-          <coordinates>
-            36.3577204,50.041374,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Метробудівників, 9</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: 1.04.22 1 квітня після влучання ворожої ракети, зайнялася пожежа, із подальшим руйнуванням споруди.<br>номер будинку: 9<br>фото: вулиця Метробудівників, 9]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: 1 квітня після влучання ворожої ракети в будинку спалахнула пожежа, спричинивши руйнування споруди.<br>номер будинку: 9<br>фото: Metrobudbvnikiv_9.jpeg<br>відео: Metrobudivnykiv_9.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -562,13 +562,16 @@
             <value>Метробудівників</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>1.04.22 1 квітня після влучання ворожої ракети, зайнялася пожежа, із подальшим руйнуванням споруди.</value>
+            <value>1 квітня після влучання ворожої ракети в будинку спалахнула пожежа, спричинивши руйнування споруди.</value>
           </Data>
           <Data name="номер будинку">
             <value>9</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Метробудівників, 9</value>
+            <value>Metrobudbvnikiv_9.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_9.mp4</value>
           </Data>
         </ExtendedData>
         <Point>
@@ -579,11 +582,11 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 72</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 5.03.22 Руйнування фасаду внаслідок обстрілу, пожежа<br>номер будинку: 72<br>фото: вулиця Наталії Ужвій, 72]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Внаслідок обстрілу 5 березня зруйнований фасад будинку, спалахнула пожежа. <br>номер будинку: 72<br>фото: NataliyiUzhviy_72.jpeg<br>відео: NataliyiUzhviy_72.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -592,13 +595,16 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>5.03.22 Руйнування фасаду внаслідок обстрілу, пожежа</value>
+            <value>Внаслідок обстрілу 5 березня зруйнований фасад будинку, спалахнула пожежа. </value>
           </Data>
           <Data name="номер будинку">
             <value>72</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Наталії Ужвій, 72</value>
+            <value>NataliyiUzhviy_72.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value>NataliyiUzhviy_72.mp4</value>
           </Data>
         </ExtendedData>
         <Point>
@@ -609,11 +615,11 @@
       </Placemark>
       <Placemark>
         <name>Метробудівників, 3</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: 29.03.22 Будинок серйозно пошкоджено через багато влучань снарядів, сильна пожежа зруйнувала 50% квартир, пошкоджено технічний поверх, зруйновано балкони, вибиті вікна.<br>номер будинку: 3<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: 29 березня близько половини квартир у будинку вигоріли після численних влучань снарядів. Пошкоджено технічний поверх, зруйновано балкони, вибито вікна. <br>номер будинку: 3<br>фото: Metrobudivnykiv_3.jpeg<br>відео: Metrobudivnykiv_3.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -622,13 +628,16 @@
             <value>Метробудівників</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>29.03.22 Будинок серйозно пошкоджено через багато влучань снарядів, сильна пожежа зруйнувала 50% квартир, пошкоджено технічний поверх, зруйновано балкони, вибиті вікна.</value>
+            <value>29 березня близько половини квартир у будинку вигоріли після численних влучань снарядів. Пошкоджено технічний поверх, зруйновано балкони, вибито вікна. </value>
           </Data>
           <Data name="номер будинку">
             <value>3</value>
           </Data>
           <Data name="фото">
-            <value/>
+            <value>Metrobudivnykiv_3.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_3.mp4</value>
           </Data>
         </ExtendedData>
         <Point>
@@ -639,11 +648,11 @@
       </Placemark>
       <Placemark>
         <name>Метробудівників, 5</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: 31.03.22 Будинок  сильно пошкоджено великою кількістью влучань снарядів. Також була сильна пожежа, десь 40-50% квартир повністю сгоріло.<br>номер будинку: 5<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: Близько половини квартир вигоріло після численних влучань снарядів 31 березня. <br>номер будинку: 5<br>фото: Metrobudivnykiv_5.png<br>відео: Metrobudivnykiv_5.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -652,13 +661,16 @@
             <value>Метробудівників</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>31.03.22 Будинок  сильно пошкоджено великою кількістью влучань снарядів. Також була сильна пожежа, десь 40-50% квартир повністю сгоріло.</value>
+            <value>Близько половини квартир вигоріло після численних влучань снарядів 31 березня. </value>
           </Data>
           <Data name="номер будинку">
             <value>5</value>
           </Data>
           <Data name="фото">
-            <value/>
+            <value>Metrobudivnykiv_5.png</value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_5.mp4</value>
           </Data>
         </ExtendedData>
         <Point>
@@ -669,11 +681,11 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 66</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 2.04.22 Дім пошкоджено, повністю вигоріли другий та перший під'їзди<br>номер будинку: 66<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[<img src="https://doc-0k-7g-mymaps.googleusercontent.com/untrusted/hostedimage/1ienmu241fuheevvnmtc17t4r8/d5ck2t8hkjis86j5occ2v7m7c0/1674641517250/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AI-xGzxP6yG7Faui6pjEjS_iq_-mUaYHv6Sdn_p0GJPNNIn8zMJUzV1m_mf5uWPpZn1W9wzlL3PcwmdCMmwGDURoAq72rf3a9IvKzQqIg4g8N7MCo4GRJuqKa1TQYXXVR-XUH6SWI7greiKWVVFC7K_Rn3lh-bpoMGAFlIyzveMN3LI0dsIoAz71C9ceKjK_KnU3OiM?session=0&fife" height="200" width="auto" /><br><br>опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Другого квітня після обстрілу повністю вигоріли перший і другий під'їзди<br>номер будинку: 66<br>фото: NataliyiUzhviy_66.jpeg<br>відео: NataliyiUzhviy_66.mp4<br><br><img src="https://doc-0s-7g-mymaps.googleusercontent.com/untrusted/hostedimage/1ienmu241fuheevvnmtc17t4r8/j0bt4v7qgo6m75l485hqtmk848/1674641517250/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AI-xGzy5d3oW2EJcVb3fgUXntuTw9tPE7ukVkYi5j_OB32WuJ3wpQZZartQXbRNSXOJYiazjb4dUgLI3Ju-98wADFZXMjaHqlNJObxRDe1TjeXz2EVUfqDEkxaRgHSVptalNkppvtlnqk30aLr_Abk0gdOR3bvIBsU51uEIxMvByWoNQTBlVTfA1KV1OavyWK45PITY?session=0&fife" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -682,13 +694,19 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value><![CDATA[2.04.22 Дім пошкоджено, повністю вигоріли другий та перший під'їзди]]></value>
+            <value><![CDATA[Другого квітня після обстрілу повністю вигоріли перший і другий під'їзди]]></value>
           </Data>
           <Data name="номер будинку">
             <value>66</value>
           </Data>
           <Data name="фото">
-            <value/>
+            <value>NataliyiUzhviy_66.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value>NataliyiUzhviy_66.mp4</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0k-7g-mymaps.googleusercontent.com/untrusted/hostedimage/1ienmu241fuheevvnmtc17t4r8/d5ck2t8hkjis86j5occ2v7m7c0/1674641517250/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AI-xGzxP6yG7Faui6pjEjS_iq_-mUaYHv6Sdn_p0GJPNNIn8zMJUzV1m_mf5uWPpZn1W9wzlL3PcwmdCMmwGDURoAq72rf3a9IvKzQqIg4g8N7MCo4GRJuqKa1TQYXXVR-XUH6SWI7greiKWVVFC7K_Rn3lh-bpoMGAFlIyzveMN3LI0dsIoAz71C9ceKjK_KnU3OiM?session=0&fife https://doc-0s-7g-mymaps.googleusercontent.com/untrusted/hostedimage/1ienmu241fuheevvnmtc17t4r8/j0bt4v7qgo6m75l485hqtmk848/1674641517250/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AI-xGzy5d3oW2EJcVb3fgUXntuTw9tPE7ukVkYi5j_OB32WuJ3wpQZZartQXbRNSXOJYiazjb4dUgLI3Ju-98wADFZXMjaHqlNJObxRDe1TjeXz2EVUfqDEkxaRgHSVptalNkppvtlnqk30aLr_Abk0gdOR3bvIBsU51uEIxMvByWoNQTBlVTfA1KV1OavyWK45PITY?session=0&fife]]></value>
           </Data>
         </ExtendedData>
         <Point>
@@ -699,11 +717,11 @@
       </Placemark>
       <Placemark>
         <name>Метробудівників, 1</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: 24.03.22 зруйновано фасад будинку в результаті обстрілу, руйнування між поверхових перегородок, пожежа<br>номер будинку: 1<br>фото: метробудівників 1]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: Після обстрілу, що стався 24 березня, зруйновано фасад будинку, перегородки між поверхами, спалахнула пожежа. <br>номер будинку: 1<br>фото: Metrobudbvnikiv_1.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -712,13 +730,16 @@
             <value>Метробудівників</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>24.03.22 зруйновано фасад будинку в результаті обстрілу, руйнування між поверхових перегородок, пожежа</value>
+            <value>Після обстрілу, що стався 24 березня, зруйновано фасад будинку, перегородки між поверхами, спалахнула пожежа. </value>
           </Data>
           <Data name="номер будинку">
             <value>1</value>
           </Data>
           <Data name="фото">
-            <value>метробудівників 1</value>
+            <value>Metrobudbvnikiv_1.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -729,11 +750,11 @@
       </Placemark>
       <Placemark>
         <name>Дружби Народів, 223</name>
-        <description><![CDATA[опис: пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Дружби Народів<br>як пошкоджено: 1.04.22. Снаряд потрапив до будинку. На території знаходяться два житлові будинки, обидва постраждали, є часткові руйнування.<br>номер будинку: 223<br>фото: вулиця Дружби Народів, 223]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Дружби Народів<br>як пошкоджено: Є часткові руйнування, вибито вікна після влучання снаряду в будинок 1 квітня.<br>номер будинку: 223<br>фото: Drushbi_Narodiv_223.JPG<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>пошкодження будинку</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -742,13 +763,16 @@
             <value>Дружби Народів</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>1.04.22. Снаряд потрапив до будинку. На території знаходяться два житлові будинки, обидва постраждали, є часткові руйнування.</value>
+            <value>Є часткові руйнування, вибито вікна після влучання снаряду в будинок 1 квітня.</value>
           </Data>
           <Data name="номер будинку">
             <value>223</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Дружби Народів, 223</value>
+            <value>Drushbi_Narodiv_223.JPG</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -759,11 +783,11 @@
       </Placemark>
       <Placemark>
         <name>Джерельна вулиця, 9 А</name>
-        <description><![CDATA[опис: пошкодження будинку<br>тип вулиці: вулиця<br>назва вулиці: Джерельна <br>як пошкоджено: 6.03.22. Ракета влучила в будинок всередині двору. Також два снаряди влучили у зовнішній фасад з іншого боку будинку. Через місяць з'явилися ще два прильоти.<br>номер будинку: 9а<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Джерельна <br>як пошкоджено: 6 березня російська ракета влучила в сусідній будинок у дворі, в результаті цей будинок отримав перші пошкодження - вибито вікна. Пізніше два снаряди влучили у фасад з іншого боку. Через місяць -- ще два  "прильоти". <br>номер будинку: 9а<br>фото: vulitsa_Dsherelna_9А.png<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>пошкодження будинку</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -772,12 +796,15 @@
             <value>Джерельна </value>
           </Data>
           <Data name="як пошкоджено">
-            <value><![CDATA[6.03.22. Ракета влучила в будинок всередині двору. Також два снаряди влучили у зовнішній фасад з іншого боку будинку. Через місяць з'явилися ще два прильоти.]]></value>
+            <value><![CDATA[6 березня російська ракета влучила в сусідній будинок у дворі, в результаті цей будинок отримав перші пошкодження - вибито вікна. Пізніше два снаряди влучили у фасад з іншого боку. Через місяць -- ще два  "прильоти". ]]></value>
           </Data>
           <Data name="номер будинку">
             <value>9а</value>
           </Data>
           <Data name="фото">
+            <value>vulitsa_Dsherelna_9А.png</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -789,11 +816,11 @@
       </Placemark>
       <Placemark>
         <name>Леся Сердюка, 28</name>
-        <description><![CDATA[опис: пошкодження будинку<br>тип вулиці: вулиця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: 4.03.22 Будинок пошкоджено ворожим снарядом<br>номер будинку: 28<br>фото: вулиця Леся Сердюка, 28,]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: Вибито вікна, інші дрібні пошкодження внаслідок обстрілу 4 березня<br>номер будинку: 28<br>фото: Lesya Serdyuka_28.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>пошкодження будинку</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -802,13 +829,16 @@
             <value>Леся Сердюка</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>4.03.22 Будинок пошкоджено ворожим снарядом</value>
+            <value>Вибито вікна, інші дрібні пошкодження внаслідок обстрілу 4 березня</value>
           </Data>
           <Data name="номер будинку">
             <value>28</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Леся Сердюка, 28,</value>
+            <value>Lesya Serdyuka_28.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -818,56 +848,29 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Леся Сердюка, 14</name>
-        <description><![CDATA[опис: <br>тип вулиці: вулиця <br>назва вулиці: Леся Сердюка<br>як пошкоджено: 3.03.22р  в 3 під'їзд на 3 поверх в квартиру навпроти влучив снаряд. Влучив в кухню, почалась пожежа, згоріло два під'їзди<br>номер будинку: 14<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
-        <ExtendedData>
-          <Data name="опис">
-            <value/>
-          </Data>
-          <Data name="тип вулиці">
-            <value>вулиця </value>
-          </Data>
-          <Data name="назва вулиці">
-            <value>Леся Сердюка</value>
-          </Data>
-          <Data name="як пошкоджено">
-            <value><![CDATA[3.03.22р  в 3 під'їзд на 3 поверх в квартиру навпроти влучив снаряд. Влучив в кухню, почалась пожежа, згоріло два під'їзди]]></value>
-          </Data>
-          <Data name="номер будинку">
-            <value>14</value>
-          </Data>
-          <Data name="фото">
-            <value/>
-          </Data>
-        </ExtendedData>
-        <Point>
-          <coordinates>
-            36.3474102,50.0335067,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Світла вулиця, 23</name>
-        <description><![CDATA[опис: <br>тип вулиці: Світла вулиця<br>назва вулиці: Світла <br>як пошкоджено: Снаряд влучив у житловий будинок, була поранена жінка.<br>номер будинку: 23<br>фото: ]]></description>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Світла <br>як пошкоджено: Снаряд влучив у житловий будинок, мешканка однієї з квартир отримала поранення.<br>номер будинку: 23<br>фото: <br>відео: ]]></description>
         <styleUrl>#icon-1899-0288D1</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value/>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
-            <value>Світла вулиця</value>
+            <value>вулиця</value>
           </Data>
           <Data name="назва вулиці">
             <value>Світла </value>
           </Data>
           <Data name="як пошкоджено">
-            <value>Снаряд влучив у житловий будинок, була поранена жінка.</value>
+            <value>Снаряд влучив у житловий будинок, мешканка однієї з квартир отримала поранення.</value>
           </Data>
           <Data name="номер будинку">
             <value>23</value>
           </Data>
           <Data name="фото">
+            <value/>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -879,8 +882,8 @@
       </Placemark>
       <Placemark>
         <name>проспект Тракторобудівників, 109</name>
-        <description><![CDATA[опис: Серйозне пошкодження <br>тип вулиці: проспект <br>назва вулиці: Тракторобудівників<br>як пошкоджено: Салтівське трамвайне депо на околиці Харкова стало мішенню російських військових з перших днів повномасштабного вторгнення. Тут сотні влучань, пошкоджено майже половину рухомого складу.<br>номер будинку: 109<br>фото: проспект Тракторобудівників, 109]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження <br>тип вулиці: проспект <br>назва вулиці: Тракторобудівників<br>як пошкоджено: Салтівське трамвайне депо на околиці Харкова стало мішенню російських військових з перших днів повномасштабного вторгнення. Там було сотні влучань, пошкоджено майже половину рухомого складу.<br>номер будинку: 109<br>фото: prospekt Traktorobudivnikiv_109.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
             <value>Серйозне пошкодження </value>
@@ -892,13 +895,16 @@
             <value>Тракторобудівників</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>Салтівське трамвайне депо на околиці Харкова стало мішенню російських військових з перших днів повномасштабного вторгнення. Тут сотні влучань, пошкоджено майже половину рухомого складу.</value>
+            <value>Салтівське трамвайне депо на околиці Харкова стало мішенню російських військових з перших днів повномасштабного вторгнення. Там було сотні влучань, пошкоджено майже половину рухомого складу.</value>
           </Data>
           <Data name="номер будинку">
             <value>109</value>
           </Data>
           <Data name="фото">
-            <value>проспект Тракторобудівників, 109</value>
+            <value>prospekt Traktorobudivnikiv_109.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -909,26 +915,29 @@
       </Placemark>
       <Placemark>
         <name>Гвардійців-Широкінців, 70</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Гвардійців-Широкінців<br>як пошкоджено: Влучання декількох снарядів у будинок. руйнування: криша + технічні приміщення ліфтові та вентиляційні (наскрізні пошкодження), фасад будівлі (пошкодження уламками старядів), вікна (ураження склопакетів та профілів уламками снарядів та вибуховімі хвилями), прибудинкова територія (пошкодження старядами), трансформаторна підстанція, зовнішні та внутрішні інженерні мережі.<br>номер будинку: 70<br>фото: вулиця Гвардійців-Широнінців, 70]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Гвардійців-Широнінців<br>як пошкоджено: Будинок дуже постраждав від кількох влучань. Зруйнований дах, технічні приміщення, ліфтові. Пошкоджений фасад, вибиті вікна, внутрішні і зовнішні комунікації. Також зруйнована трансформаторна підстанція неподалік будинку. <br>номер будинку: 70<br>фото: Gvardiiciv_Shironintsiv_70.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
           </Data>
           <Data name="назва вулиці">
-            <value>Гвардійців-Широкінців</value>
+            <value>Гвардійців-Широнінців</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>Влучання декількох снарядів у будинок. руйнування: криша + технічні приміщення ліфтові та вентиляційні (наскрізні пошкодження), фасад будівлі (пошкодження уламками старядів), вікна (ураження склопакетів та профілів уламками снарядів та вибуховімі хвилями), прибудинкова територія (пошкодження старядами), трансформаторна підстанція, зовнішні та внутрішні інженерні мережі.</value>
+            <value>Будинок дуже постраждав від кількох влучань. Зруйнований дах, технічні приміщення, ліфтові. Пошкоджений фасад, вибиті вікна, внутрішні і зовнішні комунікації. Також зруйнована трансформаторна підстанція неподалік будинку. </value>
           </Data>
           <Data name="номер будинку">
             <value>70</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Гвардійців-Широнінців, 70</value>
+            <value>Gvardiiciv_Shironintsiv_70.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -939,11 +948,11 @@
       </Placemark>
       <Placemark>
         <name>Дружби Народів, 225</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Дружби Народів<br>як пошкоджено: 29.04.22р Зруйновано будинок<br>номер будинку: 225<br>фото: вулиця Дружби Народів, 225]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Дружби Народів<br>як пошкоджено: Будівлю зруйновано внаслідок обстрілу, що трапився 29 квітня<br>номер будинку: 225<br>фото: Drushbi_Narodiv_225.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -952,13 +961,16 @@
             <value>Дружби Народів</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>29.04.22р Зруйновано будинок</value>
+            <value>Будівлю зруйновано внаслідок обстрілу, що трапився 29 квітня</value>
           </Data>
           <Data name="номер будинку">
             <value>225</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Дружби Народів, 225</value>
+            <value>Drushbi_Narodiv_225.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -969,8 +981,8 @@
       </Placemark>
       <Placemark>
         <name>Леся Сердюка, 36</name>
-        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вуліця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: 21.06.22р Пошкодження продуктового магазину, торгової зони та житлових будинків. Перед комерційними та житловими будинками видно кратери.<br>номер будинку: 36<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вуліця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: Будівлю пошкоджено внаслідок обстрілу 21 червня. Неподалік видно кратери від влучань. <br>номер будинку: 36<br>фото: Lesya_Serduka_klass.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
             <value>Серйозне пошкодження</value>
@@ -982,12 +994,15 @@
             <value>Леся Сердюка</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>21.06.22р Пошкодження продуктового магазину, торгової зони та житлових будинків. Перед комерційними та житловими будинками видно кратери.</value>
+            <value>Будівлю пошкоджено внаслідок обстрілу 21 червня. Неподалік видно кратери від влучань. </value>
           </Data>
           <Data name="номер будинку">
             <value>36</value>
           </Data>
           <Data name="фото">
+            <value>Lesya_Serduka_klass.jpg</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -999,38 +1014,8 @@
       </Placemark>
       <Placemark>
         <name>Леся Сердюка, 46,</name>
-        <description><![CDATA[опис: Зруйнування криші та фасаду школи 158<br>тип вулиці: вулиця <br>назва вулиці: Леся Сердюка<br>як пошкоджено: 17.05.2022р Пошкодження первинної школи та житлового кварталу.<br>номер будинку: 46<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
-        <ExtendedData>
-          <Data name="опис">
-            <value>Зруйнування криші та фасаду школи 158</value>
-          </Data>
-          <Data name="тип вулиці">
-            <value>вулиця </value>
-          </Data>
-          <Data name="назва вулиці">
-            <value>Леся Сердюка</value>
-          </Data>
-          <Data name="як пошкоджено">
-            <value>17.05.2022р Пошкодження первинної школи та житлового кварталу.</value>
-          </Data>
-          <Data name="номер будинку">
-            <value>46</value>
-          </Data>
-          <Data name="фото">
-            <value/>
-          </Data>
-        </ExtendedData>
-        <Point>
-          <coordinates>
-            36.3501019,50.038857,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Леся Сердюка</name>
-        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Леся Сердюка<br>як пошкоджено: 31.03.22р Зруйновані магазини-кіоски та, можливо, розрив газопроводу.<br>номер будинку: <br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Леся Сердюка<br>як пошкоджено: 17 травня внаслідок обстрілів обстрілів зруйновано дах і фасад школи №158<br>номер будинку: 46<br>фото: Lesya_Serdyuka_46_School158.png<br>відео: Lesya_Serdyuka_46_School158.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
             <value>Серйозне пошкодження</value>
@@ -1042,12 +1027,48 @@
             <value>Леся Сердюка</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>31.03.22р Зруйновані магазини-кіоски та, можливо, розрив газопроводу.</value>
+            <value>17 травня внаслідок обстрілів обстрілів зруйновано дах і фасад школи №158</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>46</value>
+          </Data>
+          <Data name="фото">
+            <value>Lesya_Serdyuka_46_School158.png</value>
+          </Data>
+          <Data name="відео">
+            <value>Lesya_Serdyuka_46_School158.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3501019,50.038857,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Леся Сердюка</name>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Леся Сердюка<br>як пошкоджено: 31 березня обстрілами були знищені невеликі магазини та кіоски. Пошкоджений газопровід<br>номер будинку: <br>фото: Kioski_Lesya_serduka_klass.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Серйозне пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця </value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Леся Сердюка</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>31 березня обстрілами були знищені невеликі магазини та кіоски. Пошкоджений газопровід</value>
           </Data>
           <Data name="номер будинку">
             <value/>
           </Data>
           <Data name="фото">
+            <value>Kioski_Lesya_serduka_klass.jpg</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -1059,8 +1080,8 @@
       </Placemark>
       <Placemark>
         <name>Дружби Народів 239</name>
-        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: обстріл<br>номер будинку: 239<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: Будинок частково зруйновано. Пошкоджений фасад, перекриття, вибито вікна.<br>номер будинку: 239<br>фото: Drushbi_Narodiv_239.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
             <value>Серйозне пошкодження</value>
@@ -1072,12 +1093,15 @@
             <value>Дружби Народів</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>обстріл</value>
+            <value>Будинок частково зруйновано. Пошкоджений фасад, перекриття, вибито вікна.</value>
           </Data>
           <Data name="номер будинку">
             <value>239</value>
           </Data>
           <Data name="фото">
+            <value>Drushbi_Narodiv_239.jpg</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -1089,8 +1113,8 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 76</name>
-        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 6.03.22р дитячий садок обстріл<br>номер будинку: 76<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[<img src="https://doc-00-7g-mymaps.googleusercontent.com/untrusted/hostedimage/1ienmu241fuheevvnmtc17t4r8/t2mgaeq4p2tv53jutl5ocrtcp0/1674641517250/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AI-xGzzn_3OO0-sO-BSPyO7P0u3MHZbREBwQmf47RIUEfWxSutR1ZZgKZ6GEymmC94kNzdHf2k89FaBqo8OkumhQkfY5n6zFt0cdhykvdk8TYBAacnGT23Mt0NhJdTlSo_Hzt3An08Y4StzAIBMkMi2-aA2OxgjWnFO41bQ77fVzWAIMEHt0Ylug-BYgAtwZKJZSm_I?session=0&fife" height="200" width="auto" /><br><br>опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Будівля дитсадка отримала серйозні пошкодження вналсідок обстрілу 6 березня. <br>номер будинку: 76<br>фото: NataliyiUzhviy_76.jpeg<br>відео: NataliyiUzhviy_76_Kindergarten_464.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
             <value>Серйозне пошкодження</value>
@@ -1102,13 +1126,19 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>6.03.22р дитячий садок обстріл</value>
+            <value>Будівля дитсадка отримала серйозні пошкодження вналсідок обстрілу 6 березня. </value>
           </Data>
           <Data name="номер будинку">
             <value>76</value>
           </Data>
           <Data name="фото">
-            <value/>
+            <value>NataliyiUzhviy_76.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value>NataliyiUzhviy_76_Kindergarten_464.mp4</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-00-7g-mymaps.googleusercontent.com/untrusted/hostedimage/1ienmu241fuheevvnmtc17t4r8/t2mgaeq4p2tv53jutl5ocrtcp0/1674641517250/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AI-xGzzn_3OO0-sO-BSPyO7P0u3MHZbREBwQmf47RIUEfWxSutR1ZZgKZ6GEymmC94kNzdHf2k89FaBqo8OkumhQkfY5n6zFt0cdhykvdk8TYBAacnGT23Mt0NhJdTlSo_Hzt3An08Y4StzAIBMkMi2-aA2OxgjWnFO41bQ77fVzWAIMEHt0Ylug-BYgAtwZKJZSm_I?session=0&fife]]></value>
           </Data>
         </ExtendedData>
         <Point>
@@ -1119,8 +1149,8 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 62</name>
-        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: обстріл<br>номер будинку: 62<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Будинок частково зруйновано. Пошкоджений фасад, перекриття, вибито вікна.<br>номер будинку: 62<br>фото: NataliyiUzhviy_62.png<br>відео: NataliyiUzhviy_62.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
             <value>Серйозне пошкодження</value>
@@ -1132,13 +1162,16 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>обстріл</value>
+            <value>Будинок частково зруйновано. Пошкоджений фасад, перекриття, вибито вікна.</value>
           </Data>
           <Data name="номер будинку">
             <value>62</value>
           </Data>
           <Data name="фото">
-            <value/>
+            <value>NataliyiUzhviy_62.png</value>
+          </Data>
+          <Data name="відео">
+            <value>NataliyiUzhviy_62.mp4</value>
           </Data>
         </ExtendedData>
         <Point>
@@ -1149,11 +1182,11 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 100</name>
-        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: обстріл<br>номер будинку: 100<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Внаслідок обстрілів у будинку вибито вікна<br>номер будинку: 100<br>фото: Nataliyi_Uzhviy_100.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -1162,12 +1195,15 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>обстріл</value>
+            <value>Внаслідок обстрілів у будинку вибито вікна</value>
           </Data>
           <Data name="номер будинку">
             <value>100</value>
           </Data>
           <Data name="фото">
+            <value>Nataliyi_Uzhviy_100.jpg</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -1179,11 +1215,11 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій 112</name>
-        <description><![CDATA[опис: Серйозне пошкодження <br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій <br>як пошкоджено: обстріл<br>номер будинку: 112<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій <br>як пошкоджено: Внаслідок обстрілів у будинку вибито вікна<br>номер будинку: 112<br>фото: Nataliyi_Uzhviy_112.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження </value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -1192,12 +1228,15 @@
             <value>Наталії Ужвій </value>
           </Data>
           <Data name="як пошкоджено">
-            <value>обстріл</value>
+            <value>Внаслідок обстрілів у будинку вибито вікна</value>
           </Data>
           <Data name="номер будинку">
             <value>112</value>
           </Data>
           <Data name="фото">
+            <value>Nataliyi_Uzhviy_112.jpg</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -1209,8 +1248,8 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій 98</name>
-        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій <br>як пошкоджено: обстріл<br>номер будинку: 98<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій <br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 98<br>фото: Nataliyi_Uzhviy_98.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
             <value>Серйозне пошкодження</value>
@@ -1222,12 +1261,15 @@
             <value>Наталії Ужвій </value>
           </Data>
           <Data name="як пошкоджено">
-            <value>обстріл</value>
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
           </Data>
           <Data name="номер будинку">
             <value>98</value>
           </Data>
           <Data name="фото">
+            <value>Nataliyi_Uzhviy_98.jpg</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -1239,11 +1281,11 @@
       </Placemark>
       <Placemark>
         <name>Дружби Народів, 257</name>
-        <description><![CDATA[опис: пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Дружби Народів<br>як пошкоджено: обстріл<br>номер будинку: 257<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Дружби Народів<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 257<br>фото: Drushbi_Narodiv_257.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>пошкодження</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -1252,12 +1294,15 @@
             <value>Дружби Народів</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>обстріл</value>
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
           </Data>
           <Data name="номер будинку">
             <value>257</value>
           </Data>
           <Data name="фото">
+            <value>Drushbi_Narodiv_257.jpg</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -1269,11 +1314,11 @@
       </Placemark>
       <Placemark>
         <name>Наталіі Ужвій 60</name>
-        <description><![CDATA[опис: серьозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталіі Ужвій<br>як пошкоджено: обстріл<br>номер будинку: 60<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталіі Ужвій<br>як пошкоджено: В будинку пошкоджені численні вікна, внаслідок обстрілу вигоріли кілька квартир, пошкоджений фасад<br>номер будинку: 60<br>фото: NataliyUshviy_60.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>серьозне пошкодження</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -1282,12 +1327,15 @@
             <value>Наталіі Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>обстріл</value>
+            <value>В будинку пошкоджені численні вікна, внаслідок обстрілу вигоріли кілька квартир, пошкоджений фасад</value>
           </Data>
           <Data name="номер будинку">
             <value>60</value>
           </Data>
           <Data name="фото">
+            <value>NataliyUshviy_60.jpg</value>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -1298,42 +1346,12 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Наталії Ужвій, 40</name>
-        <description><![CDATA[опис: пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: обстріл<br>номер будинку: 40<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
-        <ExtendedData>
-          <Data name="опис">
-            <value>пошкодження</value>
-          </Data>
-          <Data name="тип вулиці">
-            <value>вулиця </value>
-          </Data>
-          <Data name="назва вулиці">
-            <value>Наталії Ужвій</value>
-          </Data>
-          <Data name="як пошкоджено">
-            <value>обстріл</value>
-          </Data>
-          <Data name="номер будинку">
-            <value>40</value>
-          </Data>
-          <Data name="фото">
-            <value/>
-          </Data>
-        </ExtendedData>
-        <Point>
-          <coordinates>
-            36.3567361,50.0439041,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Метробудівників, 36, </name>
-        <description><![CDATA[опис: обстріл<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: частково зруйновано<br>номер будинку: 36<br>фото: ]]></description>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Метробудівників<br>як пошкоджено: Будинок частково зруйновано. Пошкоджений фасад, перекриття, вибито вікна.<br>номер будинку: 36<br>фото: <br>відео: ]]></description>
         <styleUrl>#icon-1899-0288D1</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>обстріл</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -1342,12 +1360,15 @@
             <value>Метробудівників</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>частково зруйновано</value>
+            <value>Будинок частково зруйновано. Пошкоджений фасад, перекриття, вибито вікна.</value>
           </Data>
           <Data name="номер будинку">
             <value>36</value>
           </Data>
           <Data name="фото">
+            <value/>
+          </Data>
+          <Data name="відео">
             <value/>
           </Data>
         </ExtendedData>
@@ -1359,11 +1380,11 @@
       </Placemark>
       <Placemark>
         <name>Наталії Ужвій, 96</name>
-        <description><![CDATA[опис: Серйозне пошкодження будинку<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 15.04.22 Зруйновані п‘ять поверхів, пожежі в усьому будинку; зруйновано вхід до під‘їзду<br>номер будинку: 96<br>фото: вулиця Наталії Ужвій, 96]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Наталії Ужвій<br>як пошкоджено: 15 квітня будинок практично знищений. Зруйновано усі п'ять поверхів, вхід до будинку, спалахнули численні пожежі.  численні пожежі.<br>номер будинку: 96<br>фото: Nataliyi_Uzhviy_96.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Серйозне пошкодження будинку</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця </value>
@@ -1372,13 +1393,16 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>15.04.22 Зруйновані п‘ять поверхів, пожежі в усьому будинку; зруйновано вхід до під‘їзду</value>
+            <value><![CDATA[15 квітня будинок практично знищений. Зруйновано усі п'ять поверхів, вхід до будинку, спалахнули численні пожежі.  численні пожежі.]]></value>
           </Data>
           <Data name="номер будинку">
             <value>96</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Наталії Ужвій, 96</value>
+            <value>Nataliyi_Uzhviy_96.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -1389,11 +1413,11 @@
       </Placemark>
       <Placemark>
         <name>Джерельна 9А</name>
-        <description><![CDATA[опис: Пошкодження від ракетного та артударів  ударів<br>тип вулиці: вулиця<br>назва вулиці: вулиця Джерельна 9А<br>як пошкоджено: 6 березня 2022р. ракета влучила у будинок всередині двору. Також два снаряди влучили у зовнішній фасад з іншого боку будинку. Через місяць з'явилися ще два прильоти.<br>номер будинку: 9А<br>фото: Джерельна вулиця, 9 А]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця<br>назва вулиці: вулиця Джерельна 9А<br>як пошкоджено: 6 березня російська ракета влучила в сусідній будинок у дворі, вибуховою хвилею вибило вікна й у будівлі на Джерельній, 9А. Пізніше два артилерійських снаряди пробили фасад будинку з іншого боку. Через місяць -- ще два "прильоти". <br>номер будинку: 9А<br>фото: Dsherelna_9-А.png<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Пошкодження від ракетного та артударів  ударів</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -1402,13 +1426,16 @@
             <value>вулиця Джерельна 9А</value>
           </Data>
           <Data name="як пошкоджено">
-            <value><![CDATA[6 березня 2022р. ракета влучила у будинок всередині двору. Також два снаряди влучили у зовнішній фасад з іншого боку будинку. Через місяць з'явилися ще два прильоти.]]></value>
+            <value><![CDATA[6 березня російська ракета влучила в сусідній будинок у дворі, вибуховою хвилею вибило вікна й у будівлі на Джерельній, 9А. Пізніше два артилерійських снаряди пробили фасад будинку з іншого боку. Через місяць -- ще два "прильоти". ]]></value>
           </Data>
           <Data name="номер будинку">
             <value>9А</value>
           </Data>
           <Data name="фото">
-            <value>Джерельна вулиця, 9 А</value>
+            <value>Dsherelna_9-А.png</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -1419,11 +1446,11 @@
       </Placemark>
       <Placemark>
         <name>Дружби Народів, 271</name>
-        <description><![CDATA[опис: Будинок практично зруйновано <br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: 1.04.22 В результаті влучання російського снаряду уражені всі три під'їзди будинка. Всього користувачі нарахували 11 потраплянь. В одному з під'їздів повністю зруйновані кілька квартир. Третій під'їзд повністю згорів.<br>номер будинку: 271<br>фото: вулиця Дружби Народів, 271]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: Російська армія практично знищила обстрілами цей житловий будинок. 1 квітня в результаті снаряди влучили в усі три під'їзди. В одному з під'їздів повністю зруйновані кілька квартир. Третій під'їзд повністю вигорів. Загалом мешканці нарахували 11 влучань.<br>номер будинку: 271<br>фото: Drushbi_Narodiv_271.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Будинок практично зруйновано </value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -1432,13 +1459,16 @@
             <value>Дружби Народів</value>
           </Data>
           <Data name="як пошкоджено">
-            <value><![CDATA[1.04.22 В результаті влучання російського снаряду уражені всі три під'їзди будинка. Всього користувачі нарахували 11 потраплянь. В одному з під'їздів повністю зруйновані кілька квартир. Третій під'їзд повністю згорів.]]></value>
+            <value><![CDATA[Російська армія практично знищила обстрілами цей житловий будинок. 1 квітня в результаті снаряди влучили в усі три під'їзди. В одному з під'їздів повністю зруйновані кілька квартир. Третій під'їзд повністю вигорів. Загалом мешканці нарахували 11 влучань.]]></value>
           </Data>
           <Data name="номер будинку">
             <value>271</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Дружби Народів, 271</value>
+            <value>Drushbi_Narodiv_271.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -1448,12 +1478,12 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Точка 45</name>
-        <description><![CDATA[<img src="https://doc-0s-7g-mymaps.googleusercontent.com/untrusted/hostedimage/h5jjnpt719lactsl4ufffquaic/6ugejh40g7i9o4uoqiprbc566g/1673875554000/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AKgB-9kHRCo8jk1TY8iXS1Gmk8bLJ0DS9wwkWxv-dGnixKbT7BrDSIu4jpyEov2XDw2SRw2pjMCUM1WnUTjT1Yh72JH8uwkw65UqwUS4BOJbo1sVmptj1FY0B0J7DJ1U7dYfACxgm-3VAEsGuUvD4UmvBMUW6VTH0Oa2GLF7p7JLZKTIX1fughJMLrX0IwOFWJfVE7g?session=0&fife" height="200" width="auto" /><br><br>опис: пошкодженно від обстрілу<br>тип вулиці: вулиця<br>назва вулиці: Наталья Ужвій<br>як пошкоджено: вибиті вікна<br>номер будинку: 54<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <name>Наталья Ужвій 54</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Наталья Ужвій<br>як пошкоджено: Вибуховою хвилею вибито вікна<br>номер будинку: 54<br>фото: Nataliyi_Uzhviy_54.JPG<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>пошкодженно від обстрілу</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -1462,16 +1492,16 @@
             <value>Наталья Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>вибиті вікна</value>
+            <value>Вибуховою хвилею вибито вікна</value>
           </Data>
           <Data name="номер будинку">
             <value>54</value>
           </Data>
           <Data name="фото">
-            <value/>
+            <value>Nataliyi_Uzhviy_54.JPG</value>
           </Data>
-          <Data name="gx_media_links">
-            <value><![CDATA[https://doc-0s-7g-mymaps.googleusercontent.com/untrusted/hostedimage/h5jjnpt719lactsl4ufffquaic/6ugejh40g7i9o4uoqiprbc566g/1673875554000/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AKgB-9kHRCo8jk1TY8iXS1Gmk8bLJ0DS9wwkWxv-dGnixKbT7BrDSIu4jpyEov2XDw2SRw2pjMCUM1WnUTjT1Yh72JH8uwkw65UqwUS4BOJbo1sVmptj1FY0B0J7DJ1U7dYfACxgm-3VAEsGuUvD4UmvBMUW6VTH0Oa2GLF7p7JLZKTIX1fughJMLrX0IwOFWJfVE7g?session=0&fife]]></value>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
@@ -1482,11 +1512,11 @@
       </Placemark>
       <Placemark>
         <name>Наталїї Ужвій 78</name>
-        <description><![CDATA[<img src="https://doc-00-7g-mymaps.googleusercontent.com/untrusted/hostedimage/h5jjnpt719lactsl4ufffquaic/g8ovggi76t1r58089d64ecdoqs/1673875554000/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AKgB-9nN2-Wfbv8oDx5LXb-nSYcBwR4bLq80Y8BoP6s9HdCk4qqk8cntoOSMO-7ChbHwnA--jbfdt5I10nVpoYNH9db_E6GvADw_uNGK87LUUnGtB9r05BeSwQAIsU9g3a69cwCxlZWFIzGQ_UOcvDX0ndwWsg_h7FHINnflb1JlaPfs57CxB8W8MExfSQ-TVnZscXs?session=0&fife" height="200" width="auto" /><br><br>опис: Майже повністю зніщенний будінок<br>тип вулиці: вулиця<br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Повнистю зруйновано<br>номер будинку: 78<br>фото: ]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Житловий будинок практично повністю зруйновано внаслідок численних обстрілів: дах, стіни, перекриття - усе знищено.<br>номер будинку: 78<br>фото: NataliyiUzhviy_78.jpg<br>відео: NataliyiUzhviy_78.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>Майже повністю зніщенний будінок</value>
+            <value>Серйозне пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -1495,16 +1525,16 @@
             <value>Наталії Ужвій</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>Повнистю зруйновано</value>
+            <value>Житловий будинок практично повністю зруйновано внаслідок численних обстрілів: дах, стіни, перекриття - усе знищено.</value>
           </Data>
           <Data name="номер будинку">
             <value>78</value>
           </Data>
           <Data name="фото">
-            <value/>
+            <value>NataliyiUzhviy_78.jpg</value>
           </Data>
-          <Data name="gx_media_links">
-            <value><![CDATA[https://doc-00-7g-mymaps.googleusercontent.com/untrusted/hostedimage/h5jjnpt719lactsl4ufffquaic/g8ovggi76t1r58089d64ecdoqs/1673875554000/ygxH5T4EPzCK_nO-9ioj9xPDwSBq8aup/04822770608342731010/5AKgB-9nN2-Wfbv8oDx5LXb-nSYcBwR4bLq80Y8BoP6s9HdCk4qqk8cntoOSMO-7ChbHwnA--jbfdt5I10nVpoYNH9db_E6GvADw_uNGK87LUUnGtB9r05BeSwQAIsU9g3a69cwCxlZWFIzGQ_UOcvDX0ndwWsg_h7FHINnflb1JlaPfs57CxB8W8MExfSQ-TVnZscXs?session=0&fife]]></value>
+          <Data name="відео">
+            <value>NataliyiUzhviy_78.mp4</value>
           </Data>
         </ExtendedData>
         <Point>
@@ -1514,12 +1544,12 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Точка 48</name>
-        <description><![CDATA[опис: пошкодження будинку<br>тип вулиці: вулиця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: обстріл<br>номер будинку: 14<br>фото: вулиця Леся Сердюка, 14]]></description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <name>вулиця Леся Сердюка 14</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: 3.03.22р в 3 під'їзд на 3 поверх в квартиру навпроти влучив снаряд. Влучив в кухню, почалась пожежа, згоріло два під'їзди<br>номер будинку: 14<br>фото: Lesya Serdyuka_14.jpeg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
         <ExtendedData>
           <Data name="опис">
-            <value>пошкодження будинку</value>
+            <value>Пошкодження</value>
           </Data>
           <Data name="тип вулиці">
             <value>вулиця</value>
@@ -1528,18 +1558,896 @@
             <value>Леся Сердюка</value>
           </Data>
           <Data name="як пошкоджено">
-            <value>обстріл</value>
+            <value><![CDATA[3.03.22р в 3 під'їзд на 3 поверх в квартиру навпроти влучив снаряд. Влучив в кухню, почалась пожежа, згоріло два під'їзди]]></value>
           </Data>
           <Data name="номер будинку">
             <value>14</value>
           </Data>
           <Data name="фото">
-            <value>вулиця Леся Сердюка, 14</value>
+            <value>Lesya Serdyuka_14.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
           </Data>
         </ExtendedData>
         <Point>
           <coordinates>
             36.3474317,50.033455,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Гвардійців Широнінців 108</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця <br>назва вулиці: Гвардійців-Широнінців<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 108<br>фото: <br>відео: Hvardiytsiv_Shyronintsiv_108.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця </value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Гвардійців-Широнінців</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>108</value>
+          </Data>
+          <Data name="фото">
+            <value/>
+          </Data>
+          <Data name="відео">
+            <value>Hvardiytsiv_Shyronintsiv_108.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3648253,50.0395396,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Метробудівників 6 </name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 6<br>фото: Metrobudivnykiv_6.png<br>відео: Metrobudivnykiv_6.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Метробудівників</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>6</value>
+          </Data>
+          <Data name="фото">
+            <value>Metrobudivnykiv_6.png</value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_6.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3525294,50.0394607,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Метробудівників 7 школа  165</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Будівля школи постраждала від обстрілу<br>номер будинку: 7<br>фото: Metrobudivnykiv_7_School_165.png<br>відео: Metrobudivnykiv_7_School_165.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Метробудівників</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Будівля школи постраждала від обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>7</value>
+          </Data>
+          <Data name="фото">
+            <value>Metrobudivnykiv_7_School_165.png</value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_7_School_165.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3551803,50.0411348,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Метробудівників 8</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 8<br>фото: Metrobudivnykiv_8.png<br>відео: Metrobudivnykiv_8.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Метробудівників</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>8</value>
+          </Data>
+          <Data name="фото">
+            <value>Metrobudivnykiv_8.png</value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_8.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3535381,50.0390079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Метробудівників 10</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 10<br>фото: Metrobudivnykiv_10.png<br>відео: Metrobudivnykiv_10.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Метробудівників</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>10</value>
+          </Data>
+          <Data name="фото">
+            <value>Metrobudivnykiv_10.png</value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_10.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3548047,50.0385566,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Метробудівників 11</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 11<br>фото: Metrobudivnykiv_11.png<br>відео: Metrobudivnykiv_11.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Метробудівників</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>11</value>
+          </Data>
+          <Data name="фото">
+            <value>Metrobudivnykiv_11.png</value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_11.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3572809,50.0403551,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Метробудівників 15</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 15<br>фото: Metrobudivnykiv15.png<br>відео: Metrobudivnykiv15.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Метробудівників</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>15</value>
+          </Data>
+          <Data name="фото">
+            <value>Metrobudivnykiv15.png</value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv15.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3582755,50.0399415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Метробудівників 17</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 17<br>фото: <br>відео: Metrobudivnykiv_17_School_166.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Метробудівників</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>17</value>
+          </Data>
+          <Data name="фото">
+            <value/>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_17_School_166.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3603181,50.0395513,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Метробудівників 19</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Метробудівників<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 19<br>фото: vulitsa_Metrobudbvnikiv_19_bolnitsa_№10 <br>відео: Metrobudivnykiv_19_Polyclinic_10.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Метробудівників</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>19</value>
+          </Data>
+          <Data name="фото">
+            <value>vulitsa_Metrobudbvnikiv_19_bolnitsa_№10 </value>
+          </Data>
+          <Data name="відео">
+            <value>Metrobudivnykiv_19_Polyclinic_10.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3608623,50.0386026,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Наталії Ужвій 64</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 64<br>фото: Nataliyi_Uzhviy_64.png<br>відео: NataliyiUzhviy_64.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Наталії Ужвій</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>64</value>
+          </Data>
+          <Data name="фото">
+            <value>Nataliyi_Uzhviy_64.png</value>
+          </Data>
+          <Data name="відео">
+            <value>NataliyiUzhviy_64.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3553973,50.0429138,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Наталії Ужвій 70</name>
+        <description><![CDATA[опис: Пошкодження<br><br>тип вулиці: вулиця<br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 70<br>фото: Nataliyi_Uzhviy_70.png<br>відео: NataliyiUzhviy_70.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження
+</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Наталії Ужвій</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>70</value>
+          </Data>
+          <Data name="фото">
+            <value>Nataliyi_Uzhviy_70.png</value>
+          </Data>
+          <Data name="відео">
+            <value>NataliyiUzhviy_70.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3574113,50.0430359,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Наталії Ужвій 80</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br><br><br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 80<br>фото: NataliyiUzhviy_80.png<br>відео: NataliyiUzhviy_80.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця
+
+</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Наталії Ужвій</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>80</value>
+          </Data>
+          <Data name="фото">
+            <value>NataliyiUzhviy_80.png</value>
+          </Data>
+          <Data name="відео">
+            <value>NataliyiUzhviy_80.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3590924,50.0415917,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Наталії Ужвій 82</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 82<br>фото: NataliyiUzhviy_82.jpeg<br>відео: NataliyiUzhviy_82.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Наталії Ужвій</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>82</value>
+          </Data>
+          <Data name="фото">
+            <value>NataliyiUzhviy_82.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value>NataliyiUzhviy_82.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3599997,50.0420911,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця
+Наталії Ужвій 87</name>
+        <description><![CDATA[опис: Пошкодження<br><br>тип вулиці: вулиця<br><br><br>назва вулиці: Наталії Ужвій<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 87<br>фото: NataliyiUzhviy_87.jpeg<br>відео: NataliyiUzhviy_87_TireFitting.mp4]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження
+</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця
+
+</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Наталії Ужвій</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>87</value>
+          </Data>
+          <Data name="фото">
+            <value>NataliyiUzhviy_87.jpeg</value>
+          </Data>
+          <Data name="відео">
+            <value>NataliyiUzhviy_87_TireFitting.mp4</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3597693,50.0430546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Гвардійців-Широнінців 125</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Гвардійців-Широнінців<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу<br>номер будинку: 125<br>фото: Gvardeitsev_Shironetsov_125.JPG<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Гвардійців-Широнінців</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>125</value>
+          </Data>
+          <Data name="фото">
+            <value>Gvardeitsev_Shironetsov_125.JPG</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3608591,50.03981,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Дружби Народів 203</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: Вибиті вікна, пошкоджена кутова плита внаслідок обстрілу<br>номер будинку: 203<br>фото: Drushbi_Narodiv_203.JPG <br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Дружби Народів</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Вибиті вікна, пошкоджена кутова плита внаслідок обстрілу</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>203</value>
+          </Data>
+          <Data name="фото">
+            <value>Drushbi_Narodiv_203.JPG </value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3490024,50.0366027,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Дружби Народів 287</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: Фасад та вікна пошкоджені внаслідок обстрілу, вигоріла квартира на четвертому поверсі<br>номер будинку: 287<br>фото: Drushbi_Narodiv_287<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Дружби Народів</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Фасад та вікна пошкоджені внаслідок обстрілу, вигоріла квартира на четвертому поверсі</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>287</value>
+          </Data>
+          <Data name="фото">
+            <value>Drushbi_Narodiv_287</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3678952,50.0318313,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Леся Сердюка 38</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: Більшість вікон у будинку вибито вибуховою хвилею<br>номер будинку: 38<br>фото: Lecya_Serdyaka_38<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Леся Сердюка</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Більшість вікон у будинку вибито вибуховою хвилею</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>38</value>
+          </Data>
+          <Data name="фото">
+            <value>Lecya_Serdyaka_38</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3494974,50.0373301,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Леся Сердюка 40</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: Вибито більшість вікон, незначні пошкодження фасаду<br>номер будинку: 40<br>фото: Lecya_Serdyaka_40<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Леся Сердюка</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Вибито більшість вікон, незначні пошкодження фасаду</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>40</value>
+          </Data>
+          <Data name="фото">
+            <value>Lecya_Serdyaka_40</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3516354,50.0380754,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Леся Сердюка 42</name>
+        <description><![CDATA[опис: Серйозне пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: Внаслідок обстрілів у будинку вигоріло більше десяти квартир на різних поверхах. Зруйновано перекриття між квартирами на 4, 5, 6 поверхах в одному з під'їздів. Вибито практично усі вікна, пошкоджений фасад.<br>номер будинку: 42<br>фото: Lecya_Serdyaka_42<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Серйозне пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Леся Сердюка</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value><![CDATA[Внаслідок обстрілів у будинку вигоріло більше десяти квартир на різних поверхах. Зруйновано перекриття між квартирами на 4, 5, 6 поверхах в одному з під'їздів. Вибито практично усі вікна, пошкоджений фасад.]]></value>
+          </Data>
+          <Data name="номер будинку">
+            <value>42</value>
+          </Data>
+          <Data name="фото">
+            <value>Lecya_Serdyaka_42</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3492865,50.0380589,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Леся Сердюка 44</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: Вигоріла квартира на третьому поверсі, вибито більшість вікон<br>номер будинку: 44<br>фото: Lecya_Serdyaka_44<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Леся Сердюка</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>Вигоріла квартира на третьому поверсі, вибито більшість вікон</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>44</value>
+          </Data>
+          <Data name="фото">
+            <value>Lecya_Serdyaka_44</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3487254,50.0383109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Леся Сердюка 48-2</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Леся Сердюка<br>як пошкоджено: В будинку вибито практично усі вікна<br>номер будинку: 48-2<br>фото: Lecya_Serdyaka_ 48-2.JPG<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Леся Сердюка</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>В будинку вибито практично усі вікна</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>48-2</value>
+          </Data>
+          <Data name="фото">
+            <value>Lecya_Serdyaka_ 48-2.JPG</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3492359,50.0396109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Наталії Ужвій 88</name>
+        <description><![CDATA[опис: Пошкодження<br>тип вулиці: вулиця<br>назва вулиці: Наталії Ужвій<br>як пошкоджено: В будинку вибито практично усі вікна<br>номер будинку: 88<br>фото: NataliyiUzhviy_88<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Наталії Ужвій</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>В будинку вибито практично усі вікна</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>88</value>
+          </Data>
+          <Data name="фото">
+            <value>NataliyiUzhviy_88</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3608612,50.0408005,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Дружби Народів 235</name>
+        <description><![CDATA[опис: Пошкодження будинку під час обстрілу<br><br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: обстріл<br>номер будинку: 235<br>фото: Drushbi_Narodiv_235.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження будинку під час обстрілу
+</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Дружби Народів</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>обстріл</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>235</value>
+          </Data>
+          <Data name="фото">
+            <value>Drushbi_Narodiv_235.jpg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3574733,50.0354513,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Дружби Народів 263</name>
+        <description><![CDATA[опис: Пошкодження будинку під час обстрілу<br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: обстріл<br>номер будинку: 263<br>фото: Drushbi_Narodiv_263.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження будинку під час обстрілу</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Дружби Народів</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>обстріл</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>263</value>
+          </Data>
+          <Data name="фото">
+            <value>Drushbi_Narodiv_263.jpg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.3653402,50.0337421,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>вулиця Дружби Народів 281</name>
+        <description><![CDATA[опис: Пошкодження будинку під час обстрілу<br>тип вулиці: вулиця<br>назва вулиці: Дружби Народів<br>як пошкоджено: обстріл<br>номер будинку: 281<br>фото: Drushbi_Narodiv_281.jpg<br>відео: ]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <ExtendedData>
+          <Data name="опис">
+            <value>Пошкодження будинку під час обстрілу</value>
+          </Data>
+          <Data name="тип вулиці">
+            <value>вулиця</value>
+          </Data>
+          <Data name="назва вулиці">
+            <value>Дружби Народів</value>
+          </Data>
+          <Data name="як пошкоджено">
+            <value>обстріл</value>
+          </Data>
+          <Data name="номер будинку">
+            <value>281</value>
+          </Data>
+          <Data name="фото">
+            <value>Drushbi_Narodiv_281.jpg</value>
+          </Data>
+          <Data name="відео">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            36.36907,50.0341637,0
           </coordinates>
         </Point>
       </Placemark>
@@ -1554,65 +2462,38 @@
             <LinearRing>
               <tessellate>1</tessellate>
               <coordinates>
-                36.3747266,50.0232843,0
-                36.3764867,50.0254623,0
-                36.3728386,50.0279983,0
-                36.3701775,50.0301213,0
-                36.3689335,50.0310593,0
-                36.3687615,50.0328233,0
-                36.3701345,50.0342563,0
-                36.3715086,50.0351663,0
-                36.3726236,50.0357453,0
-                36.3726236,50.0369033,0
-                36.3731596,50.0383567,0
-                36.3725586,50.0390457,0
-                36.3521312,50.0462117,0
-                36.3399001,50.0318507,0
-                36.3403291,50.0316027,0
-                36.3420031,50.0311347,0
-                36.3430761,50.0308587,0
-                36.3448782,50.0308587,0
-                36.3492347,50.0301695,0
-                36.3511227,50.0300865,0
-                36.3525387,50.0296455,0
-                36.3557577,50.0284325,0
-                36.3583327,50.0282395,0
-                36.3623668,50.0275505,0
-                36.3653708,50.0271645,0
-                36.3684178,50.0267515,0
-                36.3698768,50.0259235,0
-                36.3747266,50.0232843,0
+                36.3754088,50.022404,0
+                36.3771688,50.024582,0
+                36.3735208,50.027118,0
+                36.3711187,50.0291763,0
+                36.3698747,50.0301143,0
+                36.3697027,50.0318783,0
+                36.3710757,50.0333113,0
+                36.3724497,50.0342213,0
+                36.3735647,50.0348003,0
+                36.3735647,50.0359583,0
+                36.3741007,50.0374117,0
+                36.3734997,50.0381007,0
+                36.3530727,50.0452667,0
+                36.3408418,50.0309057,0
+                36.3412708,50.0306577,0
+                36.3429448,50.0301897,0
+                36.3440178,50.0299137,0
+                36.3458198,50.0299137,0
+                36.3501763,50.0292245,0
+                36.3520643,50.0291415,0
+                36.3534802,50.0287005,0
+                36.3566991,50.0274875,0
+                36.3592741,50.0272945,0
+                36.3633082,50.0266055,0
+                36.3663121,50.0262195,0
+                36.369359,50.0258065,0
+                36.370818,50.0249785,0
+                36.3754088,50.022404,0
               </coordinates>
             </LinearRing>
           </outerBoundaryIs>
         </Polygon>
-      </Placemark>
-      <Placemark>
-        <name>Уточнити інформацію, що це за точка</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            36.3545895,50.0372721,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Уточнити інформацію, що це за точка</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            36.3481194,50.0377304,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Уточнити інформацію, що це за точка</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            36.3479531,50.0377683,0
-          </coordinates>
-        </Point>
       </Placemark>
     </Folder>
     <Folder>

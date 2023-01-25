@@ -4314,7 +4314,7 @@
       "name": "GSI Elevation Tile",
       "properties": {
         "checkBox_Clickable": true,
-        "checkBox_Clip": true,
+        "checkBox_Clip": false,
         "checkBox_Frame": false,
         "checkBox_Sides": false,
         "checkBox_Tiles": false,
@@ -4347,7 +4347,7 @@
             "id": "c9c175c1",
             "name": "map (canvas)",
             "properties": {
-              "checkBox_Shading": true,
+              "checkBox_Shading": false,
               "checkBox_TransparentBackground": false,
               "comboBox_TextureSize": "1024",
               "radioButton_PNG": true,
@@ -4417,5 +4417,32 @@
       "visible": true
     }
   ],
+  "SCENE": {
+    "checkBox_FixAspectRatio": false,
+    "checkBox_Outline": false,
+    "colorButton_Color": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "colorButton_Fog": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "comboBox_MaterialType": 0,
+    "comboBox_xyShift": true,
+    "groupBox_Fog": false,
+    "lineEdit_CenterX": "4047349.6547499998",
+    "lineEdit_CenterY": "6452416.74625",
+    "lineEdit_Height": "4498.664699999616",
+    "lineEdit_Rotation": "0",
+    "lineEdit_Width": "4216.3927000002",
+    "lineEdit_zFactor": "1.0",
+    "radioButton_FixedExtent": true,
+    "slider_Fog": 41
+  },
   "Version": 20701
 }
