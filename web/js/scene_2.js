@@ -258,21 +258,21 @@ window.onload = function() {
     }
     // window.addEventListener('mousemove', setPickPosition);
     window.addEventListener('click', setPickPosition);
-    window.addEventListener('touchend', setPickPosition);
+    // window.addEventListener('touchend', clearPickPosition);
     window.addEventListener('mouseout', clearPickPosition);
     window.addEventListener('mouseleave', clearPickPosition);
 
-    window.addEventListener('touchstart', (event) => {
-        // prevent the window from scrolling
-        event.preventDefault();
-        setPickPosition(event.touches[0]);
-    }, { passive: false });
+    // window.addEventListener('touchstart', (event) => {
+    //     // prevent the window from scrolling
+    //     event.preventDefault();
+    //     setPickPosition(event.touches[0]);
+    // }, { passive: false });
 
-    window.addEventListener('touchmove', (event) => {
-        setPickPosition(event.touches[0]);
-    });
+    // window.addEventListener('touchmove', (event) => {
+    //     setPickPosition(event.touches[0]);
+    // });
 
-    window.addEventListener('touchend', clearPickPosition);
+    // window.addEventListener('touchend', clearPickPosition);
 
     // function animate() {
 
