@@ -382,10 +382,6 @@ h1.title {
     font-size: calc(20px + 0.7vw);
 }
 
-#autors {
-    margin-left: 3vw;
-}
-
 #background-video {
     width: 100vw;
     height: 100vh;
@@ -408,9 +404,9 @@ h1.title {
     margin-bottom: 20px;
     font-size: calc(16px + 0.5vw);
     line-height: 1.5;
-    font-family: 'proxima-bold';
-    margin-left: 25vw;
-    margin-right: 25vw;
+    font-family: 'proxima';
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
     margin-bottom: 5vh;
 }
 
@@ -498,15 +494,4 @@ figcaption {
     margin-left: 20vw;
     margin-right: 20vw;
     font-size: calc(14px + 0.5vw);
-}
-
-.output {
-    background-color: #fce8e3;
-}
-
-.output p {
-    font-size: calc(14px + 0.5vw);
-    color: #000;
-    margin-left: 25vw;
-    height: 15vh;
 }
