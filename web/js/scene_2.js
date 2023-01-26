@@ -12,9 +12,9 @@ window.onload = function() {
             '<span class="info-head">Адреса:</span> <span class="info-info">' + userData.properties[9] + '</span><br>' +
             '<span class="info-head">Категорія:</span> <span class="info-info">' + userData.properties[21] + '</span><br>' +
             '<span class="info-head">Опис:</span> <span class="info-info">' + userData.properties[24] + '</span><br>' +
-            '<video width="100%" autoplay loop muted poster="./photo/' + userData.properties[23] + '"><source src="./video/' + userData.properties[18] +
+            '<video class="vid-info"width="100%" autoplay loop muted poster="./photo/' + userData.properties[23] + '"><source src="./video_s/' + userData.properties[18] +
             '" type="video/mp4"></video>' + '<br>'
-            // 'photo ' + userData.properties[23] + '<br>' +
+            // 'photo ' + userData.properties[23] + '<br>'
             // 'video ' + userData.properties[18] + '<br>'
         )
 
@@ -37,16 +37,17 @@ window.onload = function() {
     const camera = new THREE.PerspectiveCamera(45, container.getBoundingClientRect().width / container.getBoundingClientRect().height, 1, 200);
     camera.position.set(10, 22, -45);
 
-    var Ambientlight = new THREE.AmbientLight(0xffffff, 0.1)
+    var Ambientlight = new THREE.AmbientLight(0xffffff, 0.7)
     scene.add(Ambientlight)
 
     const light = new THREE.PointLight(0xffffff, 1);
     light.position.set(0, 50, -40);
+    // -40
     light.castShadow = true
     scene.add(light);
 
-    light.shadow.mapSize.width = 512; // default
-    light.shadow.mapSize.height = 512; // default
+    light.shadow.mapSize.width = 4096; // default
+    light.shadow.mapSize.height = 4096; // default
     // light.power = 10
     light.shadow.camera.near = 20; // default
     light.shadow.camera.far = 70; // default
@@ -119,7 +120,7 @@ window.onload = function() {
 
             console.log(scene)
             scene.children[2].children[68].castShadow = true
-            scene.children[2].children[68].receiveShadow = true
+            scene.children[2].children[68].receiveShadow = false
 
             for (let step = 0; step < 68; step++) {
                 scene.children[2].children[step].receiveShadow = true
