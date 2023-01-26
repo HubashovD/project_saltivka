@@ -403,6 +403,17 @@ h1.title {
     overflow-x: hidden;
 }
 
+.lead-text-block {
+    color: #EA523C;
+    margin-bottom: 20px;
+    font-size: calc(16px + 0.5vw);
+    line-height: 1.5;
+    font-family: 'proxima-bold';
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 5vh;
+}
+
 .usual-text-block p {
     display: block;
     height: fit-content;
@@ -464,4 +475,38 @@ h1.title {
     font-size: calc(14px + 0.5vw);
     color: #000000;
     line-height: 1.5;
+}
+
+figure img {
+    /* height: 50vh; */
+    width: 50vw;
+    margin-left: 25vw;
+    /* margin: auto; */
+}
+
+figcaption {
+    margin-left: 25vw;
+    font-family: "proxima";
+    font-size: calc(8px + 0.5vw);
+    line-height: 1.5;
+}
+
+.usual-citate p {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-style: italic;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: calc(14px + 0.5vw);
+}
+
+.output {
+    background-color: #fce8e3;
+}
+
+.output p {
+    font-size: calc(14px + 0.5vw);
+    color: #000;
+    margin-left: 25vw;
+    height: 15vh;
 }
