@@ -373,7 +373,7 @@
         display: flex;
         /* background-image: url('https://texty.github.io/project_russian_war_structure/pic/cover.png'); */
         /* background-size: cover; */
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
     
     .title-wrapper {
@@ -414,7 +414,7 @@
     
     #main {
         width: 99vw;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
     
     a {
