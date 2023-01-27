@@ -130,10 +130,10 @@ window.onload = function() {
         },
         // called while loading is progressing
         function(xhr) {
-            if (xhr.loaded / xhr.total * 100 == 100) {
-                d3.select('#infoboard').html("")
-            } else { d3.select('#infoboard').html((xhr.loaded / xhr.total * 100) + '% loaded') }
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+            // if (xhr.loaded / xhr.total * 100 == 100) {
+            //     d3.select('#infoboard').html("")
+            // } else { d3.select('#infoboard').html((xhr.loaded / xhr.total * 100) + '% loaded') }
+            // console.log((xhr.loaded / xhr.total * 100) + '% loaded');
 
         },
         // called when loading has errors
